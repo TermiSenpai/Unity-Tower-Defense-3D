@@ -8877,7 +8877,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248768496}
   m_LocalRotation: {x: 0.70710677, y: -0, z: -0, w: 0.7071069}
-  m_LocalPosition: {x: 31, y: 60, z: 1}
+  m_LocalPosition: {x: 31, y: 55, z: 1.0000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55005,8 +55005,8 @@ MonoBehaviour:
   - {fileID: 3978125356112204730, guid: f1a95bd41bac542488d0aa28a882fc00, type: 3}
   spawner: {fileID: 1680329386}
   parent: {fileID: 440007803}
-  timeBeforeSpawn: 0
-  timeBetweenEnemies: 3
+  timeBeforeSpawn: 3
+  timeBetweenEnemies: 1
   round: 15
   maxRounds: 10
 --- !u!4 &1734884832

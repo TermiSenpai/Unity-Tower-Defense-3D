@@ -181,8 +181,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 8173930509240250855, guid: 9331d57665aa4414ba09b289723fcf79, type: 3}
   firePoint: {fileID: 1476897570}
-  fireRate: 2
-  fireCountdown: 0
+  bulletDamage: 5
+  fireRate: 1
+  fireCountdown: 0.5
   turretPivotRotate: {fileID: 8627922958430486481}
 --- !u!1 &8627922958414151670
 GameObject:

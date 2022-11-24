@@ -1047,6 +1047,7 @@ GameObject:
   - component: {fileID: 6082935969582177070}
   - component: {fileID: 6082935969582177069}
   - component: {fileID: 5317603972188911975}
+  - component: {fileID: 5367352002872435958}
   m_Layer: 0
   m_Name: Bloom
   m_TagString: Enemy
@@ -1192,7 +1193,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6d63bc97dbdbd4cbb197d5c4dacdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHP: 1
+  enemyDead: {fileID: 5367352002872435958}
+  EnemyHP: 5
+--- !u!114 &5367352002872435958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3978125356112204730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d87781aeb354a1a42b1d3a292c9e28a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 8185730107035891960}
+  agent: {fileID: 1603627183491770513}
+  col: {fileID: 6082935969582177069}
+  rb: {fileID: 6082935969582177070}
+  destroyTime: 2
 --- !u!1 &3978125356112204736
 GameObject:
   m_ObjectHideFlags: 0

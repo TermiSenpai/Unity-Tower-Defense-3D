@@ -7,6 +7,7 @@ public class TorretShooting : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
+    [SerializeField] private int bulletDamage;
     [SerializeField] private float fireRate;
     [SerializeField] private float fireCountdown;
     [SerializeField] private TurretPivotRotate turretPivotRotate;
@@ -31,6 +32,9 @@ public class TorretShooting : MonoBehaviour
         MovementBullets bullet = bulletGo.GetComponent<MovementBullets>();
 
         if (bullet != null)
+        {
             bullet.EnemySeek(turretPivotRotate.GetTarget());
+            bullet.BulletDamage(bulletDamage);
+        }
     }
 }

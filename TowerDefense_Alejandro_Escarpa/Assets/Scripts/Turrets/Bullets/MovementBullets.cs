@@ -6,6 +6,7 @@ using UnityEngine;
 public class MovementBullets : MonoBehaviour
 {
     [SerializeField] private float speed;
+    private int damage;
     private Transform target;
     Vector3 lastBulletPosition;
 
@@ -36,6 +37,10 @@ public class MovementBullets : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if(other.gameObject.TryGetComponent<EnemyHp>(out EnemyHp enemyHP))
+        {
+            enemyHP.Dmg(damage);
+        }
         Debug.Log("Enemy hit");
         Destroy(gameObject);        
     }
@@ -43,5 +48,10 @@ public class MovementBullets : MonoBehaviour
     public void EnemySeek(Transform target)
     {
         this.target = target;
+    }
+
+    public void BulletDamage(int damage)
+    {
+        this.damage = damage;
     }
 }
