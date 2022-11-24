@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Turret : MonoBehaviour
+public class TurretPivotRotate : MonoBehaviour
 {
     [SerializeField] private Transform target;
     [SerializeField] private float range;
@@ -19,10 +19,7 @@ public class Turret : MonoBehaviour
     {
         if (target == null)
             return;
-        Vector3 dir = target.position - transform.position;
-        Quaternion lookRotation = Quaternion.LookRotation(dir);
-        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * rotateTime).eulerAngles;
-        partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+        ChangeRotateDir();
     }
 
     private void UpdateTarget()
@@ -48,6 +45,24 @@ public class Turret : MonoBehaviour
         }
         else
             target = null;
+    }
+
+    private void ChangeRotateDir()
+    {
+        Vector3 dir = target.position - transform.position;
+        Quaternion lookRotation = Quaternion.LookRotation(dir);
+        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * rotateTime).eulerAngles;
+        partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+    }
+
+    public bool HaveTarget()
+    {
+        return target != null;
+    }
+
+    public Transform GetTarget()
+    {
+        return target;
     }
 
     private void OnDrawGizmosSelected()

@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Castle
   - Dead
+  - Turret
   layers:
   - Default
   - TransparentFX
