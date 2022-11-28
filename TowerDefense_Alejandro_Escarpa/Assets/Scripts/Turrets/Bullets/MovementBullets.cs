@@ -6,9 +6,16 @@ using UnityEngine;
 public class MovementBullets : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private ParticleSystem hitParticle;
     private int damage;
     private Transform target;
     Vector3 lastBulletPosition;
+    FBxPlayerManager fbxPlayer;
+
+    private void Start()
+    {
+        fbxPlayer = FindObjectOfType<FBxPlayerManager>();
+    }
 
     void Update()
     {
@@ -41,7 +48,7 @@ public class MovementBullets : MonoBehaviour
         {
             enemyHP.Dmg(damage);
         }
-        Debug.Log("Enemy hit");
+        fbxPlayer.ImpactFbxPlay(hitParticle, other.transform);
         Destroy(gameObject);        
     }
 
