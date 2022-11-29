@@ -8,7 +8,6 @@ public class CameraMovement : MonoBehaviour
 
     [Header("Padding")]
     [SerializeField] private float panSpeed;
-    [SerializeField] private float panBorderThickness = 10f;
 
     [Header("Scrollinig")]
     [SerializeField] private float multiplier;
