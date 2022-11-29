@@ -31,13 +31,13 @@ public class CameraMovement : MonoBehaviour
 
     private void InputCamera()
     {
-        if (Input.GetKey(KeyCode.W) || Input.mousePosition.y >= Screen.height - panBorderThickness)
+        if (Input.GetKey(KeyCode.W))
             moveCamera(Vector3.forward);
-        if (Input.GetKey(KeyCode.S) || Input.mousePosition.y <= panBorderThickness)
+        if (Input.GetKey(KeyCode.S))
             moveCamera(Vector3.back);
-        if (Input.GetKey(KeyCode.D) || Input.mousePosition.x >= Screen.width - panBorderThickness)
+        if (Input.GetKey(KeyCode.D))
             moveCamera(Vector3.right);
-        if (Input.GetKey(KeyCode.A) || Input.mousePosition.x <= panBorderThickness)
+        if (Input.GetKey(KeyCode.A))
             moveCamera(Vector3.left);
     }
 
