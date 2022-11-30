@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ForestLevel.unity
+    guid: 7c61185ebc43d0f4b88557b8371614c4
   m_configObjects: {}
