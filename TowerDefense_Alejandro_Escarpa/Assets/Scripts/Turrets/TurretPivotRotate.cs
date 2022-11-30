@@ -65,6 +65,8 @@ public class TurretPivotRotate : MonoBehaviour
         return target;
     }
 
+    public float GetTurretRange() { return range; }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
