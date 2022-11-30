@@ -7,7 +7,6 @@ public class BuildManager : MonoBehaviour
     public static BuildManager instance;
 
     [SerializeField] private GameObject turretToBuild;
-    [SerializeField] private GameObject standardTurretPrefab;
 
     private void Awake()
     {
@@ -18,11 +17,12 @@ public class BuildManager : MonoBehaviour
         instance = this;
     }
 
-    private void Start()
-    {
-        turretToBuild = standardTurretPrefab;
-    }
 
     public GameObject GetTurretToBuild() { return turretToBuild; }
+
+    public void SetTurretToBuild(GameObject turret)
+    {
+        turretToBuild = turret;
+    }
 
 }

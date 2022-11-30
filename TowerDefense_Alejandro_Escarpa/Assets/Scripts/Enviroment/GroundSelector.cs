@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class GroundSelector : MonoBehaviour
 {
@@ -10,27 +13,51 @@ public class GroundSelector : MonoBehaviour
     public Color starterColor;
     private Renderer rend;
 
+    private BuildManager buildManager;
+
     private void Start()
     {
         turretParent = GameObject.FindGameObjectWithTag("TurretParent").GetComponent<Transform>();
-        rend= GetComponent<Renderer>();
+        rend = GetComponent<Renderer>();
         starterColor = rend.material.color;
+        buildManager = BuildManager.instance;
     }
 
     private void OnMouseDown()
     {
-        if (turret != null)
+        if (EventSystem.current.IsPointerOverGameObject()) return;
+
+        GameObject turretToBuild = buildManager.GetTurretToBuild();
+
+
+        if (turret != null && turretToBuild != null)
         {
             Debug.Log("Can´t build there!");
             return;
         }
-        
-        GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
+
+        // Show turret range on click
+        if (turret != null && turretToBuild == null)
+        {
+            turret.GetComponent<TurretRange>().ToggleTurretRange();
+            Debug.Log(turret);
+        }
+
+
+        if (turretToBuild == null) return;
+
         turret = (GameObject)Instantiate(turretToBuild, transform.position + Vector3.up, transform.rotation, turretParent);
+        buildManager.SetTurretToBuild(null);
+
+
+
     }
 
     private void OnMouseEnter()
     {
+        if (EventSystem.current.IsPointerOverGameObject()) return;
+        if (buildManager.GetTurretToBuild() == null) return;
+
         rend.material.color = hoverColor;
     }
 
