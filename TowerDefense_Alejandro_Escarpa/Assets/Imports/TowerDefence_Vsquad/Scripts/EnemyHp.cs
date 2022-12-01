@@ -19,15 +19,12 @@ public class EnemyHp : MonoBehaviour
     {
         EnemyHP -= DMGcount;
         enemyDead.EnemyHitted();
-    }
-
-    private void Update()
-    {
 
         if (EnemyHP <= 0)
         {
             enemyDead.EnemyKilled();
         }
+
     }
 
 }
