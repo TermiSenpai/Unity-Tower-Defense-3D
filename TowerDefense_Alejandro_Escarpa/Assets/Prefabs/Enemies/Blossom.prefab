@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDead: {fileID: 626968855135982077}
-  EnemyHP: 30
+  EnemyHP: 15
 --- !u!114 &3905003835073153812
 MonoBehaviour:
   m_ObjectHideFlags: 0
