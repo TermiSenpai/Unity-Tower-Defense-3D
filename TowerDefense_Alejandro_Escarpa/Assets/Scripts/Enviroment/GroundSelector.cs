@@ -46,7 +46,7 @@ public class GroundSelector : MonoBehaviour
 
         if (turretToBuild == null) return;
 
-        turret = (GameObject)Instantiate(turretToBuild, transform.position + Vector3.up, transform.rotation, turretParent);
+        turret = (GameObject)Instantiate(turretToBuild, transform.position + (Vector3.up * transform.localScale.x), transform.rotation, turretParent);
         buildManager.SetTurretToBuild(null);
 
 
