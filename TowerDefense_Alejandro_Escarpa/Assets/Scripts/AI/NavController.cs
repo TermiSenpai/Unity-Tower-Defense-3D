@@ -20,7 +20,7 @@ public class NavController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Slow"))
-            SlowEnemy();
+            SlowEnemy(other.gameObject.GetComponent<SlowManager>().GetSlowPercent());
     }
 
     private void OnTriggerExit(Collider other)
@@ -28,6 +28,6 @@ public class NavController : MonoBehaviour
         EnemyBaseSpeed();
     }
 
-    private void SlowEnemy() => agent.speed *= 0.8f;
+    private void SlowEnemy(float percent) => agent.speed *= percent;
     private void EnemyBaseSpeed() => agent.speed = baseSpeed;
 }
