@@ -8,7 +8,6 @@ public class NavController : MonoBehaviour
     Transform target;
     NavMeshAgent agent;
     float baseSpeed;
-    bool isRalenticed = false;
 
     private void Start()
     {
@@ -20,7 +19,7 @@ public class NavController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.layer == 6)
+        if(other.gameObject.CompareTag("Slow"))
             SlowEnemy();
     }
 

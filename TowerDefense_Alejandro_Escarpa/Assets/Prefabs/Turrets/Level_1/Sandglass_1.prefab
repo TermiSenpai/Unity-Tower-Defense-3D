@@ -5291,9 +5291,9 @@ GameObject:
   - component: {fileID: 8706831053574385702}
   - component: {fileID: 7583867715330104700}
   - component: {fileID: 7460371368804513681}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: SlowRange
-  m_TagString: Untagged
+  m_TagString: Slow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

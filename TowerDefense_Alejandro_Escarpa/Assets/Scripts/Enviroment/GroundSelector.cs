@@ -39,7 +39,6 @@ public class GroundSelector : MonoBehaviour
         // Show turret range on click
         if (turret != null && turretToBuild == null)
         {
-            turret.GetComponent<TurretRange>().ToggleTurretRange();
             Debug.Log(turret);
         }
 
