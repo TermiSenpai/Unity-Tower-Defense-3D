@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class TorretShooting : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
@@ -14,7 +15,7 @@ public class TorretShooting : MonoBehaviour
 
     private void Update()
     {
-            fireCountdown -= Time.deltaTime;
+        fireCountdown -= Time.deltaTime;
 
         // If enemy in range, shoot
         if (fireCountdown <= 0f && turretPivotRotate.HaveTarget())
@@ -34,6 +35,7 @@ public class TorretShooting : MonoBehaviour
         if (bullet != null)
         {
             bullet.EnemySeek(turretPivotRotate.GetTarget());
+
             bullet.BulletDamage(bulletDamage);
         }
     }

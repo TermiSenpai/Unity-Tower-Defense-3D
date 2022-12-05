@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MovementBullets : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class MovementBullets : MonoBehaviour
     private Transform target;
     Vector3 lastBulletPosition;
     FBxPlayerManager fbxPlayer;
+
 
     private void Start()
     {
@@ -46,7 +48,9 @@ public class MovementBullets : MonoBehaviour
     {
         if(other.gameObject.TryGetComponent<EnemyHp>(out EnemyHp enemyHP))
         {
-            enemyHP.Dmg(damage);
+                    enemyHP.Dmg(damage);
+           
+            
         }
         fbxPlayer.ImpactFbxPlay(hitParticle, other.transform);
         Destroy(gameObject);        
