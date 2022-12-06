@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4db6514a2e4e194bbd1c6bdae54f388, type: 3}
-  m_Name: BaseTile
+  m_Name: FinishTile
   m_EditorClassIdentifier: 
   TileWeights:
     Weights:
-    - Value: {fileID: 8597327505662928564, guid: c44237c7ab52b6c47b14c8cd8502dd03, type: 3}
+    - Value: {fileID: 5672396682751999456, guid: 3ff90db12e405ae42b91b641b960937e, type: 3}
       MainPathWeight: 1
       BranchPathWeight: 1
       DepthWeightScale:

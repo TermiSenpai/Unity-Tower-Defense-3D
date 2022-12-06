@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4db6514a2e4e194bbd1c6bdae54f388, type: 3}
-  m_Name: Corner2
+  m_Name: CombatCornerTile
   m_EditorClassIdentifier: 
   TileWeights:
     Weights:
-    - Value: {fileID: 9066910127140106627, guid: fc4a9f0f589e24846a2e5e3acfaca57e, type: 3}
+    - Value: {fileID: 9165353081611070592, guid: 4fa89a8e4b4da0d4292c17d50a8b530e, type: 3}
       MainPathWeight: 1
       BranchPathWeight: 1
       DepthWeightScale:

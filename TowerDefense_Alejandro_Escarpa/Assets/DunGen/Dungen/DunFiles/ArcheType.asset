@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: ArcheType
   m_EditorClassIdentifier: 
   TileSets:
-  - {fileID: 11400000, guid: 0bb25275eed20f44085e83472e5f38c1, type: 2}
-  - {fileID: 11400000, guid: bd4c1fe6903ffcb48bb2b1f3ef3a7bb0, type: 2}
-  - {fileID: 11400000, guid: eded1d68401082e4b8bd8aa60b06b9de, type: 2}
+  - {fileID: 11400000, guid: 31a2f3705f3b72f4d966dcf92a5a4f75, type: 2}
+  - {fileID: 11400000, guid: 831a66764371ceb4da3498966e12e716, type: 2}
   BranchCapTileSets: []
   BranchCapType: 1
   BranchingDepth:
