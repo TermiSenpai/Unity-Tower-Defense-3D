@@ -106,15 +106,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 1.25
+    agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 25
+    agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.41666666
+    cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 1fa976b75cb20314f8621eeb50e91efb, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1001 &4996686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3350,6 +3350,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 884461528426959144, guid: cecb1f4a159977a4884abfa2fc201491, type: 3}
   m_PrefabInstance: {fileID: 482134496}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &485428112
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 485428114}
+  - component: {fileID: 485428113}
+  m_Layer: 0
+  m_Name: DunGen Coroutine Helper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &485428113
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485428112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d5e84273fce13e41969baa0fb65e754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &485428114
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485428112}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &493680481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3764,6 +3808,10 @@ PrefabInstance:
     - target: {fileID: 1641819918252310, guid: 13f1670c2e187874784d0f667f9057f5, type: 3}
       propertyPath: m_Name
       value: ForestGroundDirt
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641819918252310, guid: 13f1670c2e187874784d0f667f9057f5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1641819918252310, guid: 13f1670c2e187874784d0f667f9057f5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4612,6 +4660,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1225761094964968469, guid: 45671505602f7454ea7cc5a1b70a8951, type: 3}
   m_PrefabInstance: {fileID: 623509764}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &625883922
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 625883924}
+  - component: {fileID: 625883923}
+  m_Layer: 0
+  m_Name: DunGen Coroutine Helper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &625883923
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625883922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d5e84273fce13e41969baa0fb65e754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &625883924
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625883922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &627412012
 GameObject:
   m_ObjectHideFlags: 0
@@ -11661,6 +11753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1682455384}
   - component: {fileID: 1682455383}
+  - component: {fileID: 1682455385}
   m_Layer: 0
   m_Name: DungeonGenerator
   m_TagString: Untagged
@@ -11695,7 +11788,7 @@ MonoBehaviour:
     AllowTileRotation: 0
     DebugRender: 0
     LengthMultiplier: 2
-    PlaceTileTriggers: 1
+    PlaceTileTriggers: 0
     TileTriggerLayer: 2
     GenerateAsynchronously: 0
     MaxAsyncFrameMilliseconds: 50
@@ -11719,14 +11812,39 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682455382}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1682455385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682455382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76f356143a516846a54607aa83a9ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Priority: 0
+  BakeMode: 3
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  AddNavMeshLinksBetweenRooms: 1
+  NavMeshAgentTypes:
+  - AgentTypeID: 0
+    AreaTypeID: 0
+    DisableLinkWhenDoorIsClosed: 1
+  NavMeshLinkDistanceFromDoorway: 2.5
+  AutoGenerateFullRebakeSurfaces: 1
+  FullRebakeTargets: []
 --- !u!1001 &1689924436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12131,7 +12249,7 @@ MonoBehaviour:
   - {fileID: 5509129847841610287, guid: f0b1b6a1816bdca488f3eed5724d5c50, type: 3}
   boss: {fileID: 8747707380417040920, guid: 6fb8e0a9593d6d742bc3ca8579fe9471, type: 3}
   parent: {fileID: 440007803}
-  timeBeforeSpawn: 3
+  timeBeforeSpawn: 0
   timeBetweenEnemies: 1
   round: 1
   roundTxt: {fileID: 580455457}
@@ -13379,7 +13497,7 @@ Transform:
   m_Children:
   - {fileID: 1201111522}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1903374098
 PrefabInstance:
