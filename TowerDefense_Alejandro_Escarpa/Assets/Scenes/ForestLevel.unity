@@ -3876,11 +3876,11 @@ PrefabInstance:
     - target: {fileID: 23542803707668920, guid: 13f1670c2e187874784d0f667f9057f5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4484256e7ebbe4a4eab77924649bab61, type: 2}
+      objectReference: {fileID: 2100000, guid: f731a2ae89bef7a47a008811dfbd4680, type: 2}
     - target: {fileID: 33605578515500198, guid: 13f1670c2e187874784d0f667f9057f5, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: caca2dfcd7da619408439605ff0667a4, type: 3}
+      objectReference: {fileID: 4300000, guid: dac1f6a026468af46b8928893e3eea27, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13f1670c2e187874784d0f667f9057f5, type: 3}
 --- !u!1001 &553944267
