@@ -12249,7 +12249,7 @@ MonoBehaviour:
   - {fileID: 5509129847841610287, guid: f0b1b6a1816bdca488f3eed5724d5c50, type: 3}
   boss: {fileID: 8747707380417040920, guid: 6fb8e0a9593d6d742bc3ca8579fe9471, type: 3}
   parent: {fileID: 440007803}
-  timeBeforeSpawn: 0
+  timeBeforeSpawn: 3
   timeBetweenEnemies: 1
   round: 1
   roundTxt: {fileID: 580455457}
