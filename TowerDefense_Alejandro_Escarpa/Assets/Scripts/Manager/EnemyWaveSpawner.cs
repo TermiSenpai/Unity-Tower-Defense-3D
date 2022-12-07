@@ -8,14 +8,21 @@ public class EnemyWaveSpawner : MonoBehaviour
 {
     [SerializeField] GameObject[] enemies;
     [SerializeField] GameObject boss;
-
-    [SerializeField] Transform spawner;
+    [Space]
+    Transform spawner;
     [SerializeField] Transform parent;
     [SerializeField] float timeBeforeSpawn;
     [SerializeField] float timeBetweenEnemies;
     [SerializeField] int round;
     [SerializeField] TextMeshProUGUI roundTxt;
     bool canSpawnEnemies = true;
+
+
+    private void Start()
+    {
+        spawner = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>();
+        
+    }
 
     public void StartEnemyWave()
     {
