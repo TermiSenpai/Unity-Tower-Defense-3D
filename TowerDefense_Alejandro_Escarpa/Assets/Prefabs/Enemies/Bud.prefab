@@ -379,6 +379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyDead: {fileID: 6526110217616328893}
   EnemyHP: 5
+  hpMultiply: 1.5
 --- !u!114 &6526110217616328893
 MonoBehaviour:
   m_ObjectHideFlags: 0
