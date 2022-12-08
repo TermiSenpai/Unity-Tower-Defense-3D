@@ -1434,6 +1434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1463460618680384417}
+  - component: {fileID: 6812513263058038102}
   m_Layer: 0
   m_Name: Castle
   m_TagString: Untagged
@@ -1460,6 +1461,20 @@ Transform:
   m_Father: {fileID: 5672396682751999457}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &6812513263058038102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2956797092473281835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c8aa749c3fc8a408976f710bb7968b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  isDead: 0
 --- !u!1 &3016932178187173370
 GameObject:
   m_ObjectHideFlags: 0
@@ -4237,7 +4252,7 @@ GameObject:
   - component: {fileID: 3261870557323447271}
   - component: {fileID: 2855162595641720528}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: EnemyTarget
   m_TagString: EnemyTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4333,6 +4348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b11c284fabaa72546949475ae73170d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castle: {fileID: 6812513263058038102}
+  damage: 10
 --- !u!1 &7599173469942991910
 GameObject:
   m_ObjectHideFlags: 0
