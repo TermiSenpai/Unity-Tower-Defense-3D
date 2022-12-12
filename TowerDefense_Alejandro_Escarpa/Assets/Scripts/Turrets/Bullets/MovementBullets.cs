@@ -46,14 +46,12 @@ public class MovementBullets : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.TryGetComponent<EnemyHp>(out EnemyHp enemyHP))
+        if (other.gameObject.TryGetComponent<EnemyHp>(out EnemyHp enemyHP))
         {
-                    enemyHP.Dmg(damage);
-           
-            
+            enemyHP.Dmg(damage);
         }
         fbxPlayer.ImpactFbxPlay(hitParticle, other.transform);
-        Destroy(gameObject);        
+        Destroy(gameObject);
     }
 
     public void EnemySeek(Transform target)
