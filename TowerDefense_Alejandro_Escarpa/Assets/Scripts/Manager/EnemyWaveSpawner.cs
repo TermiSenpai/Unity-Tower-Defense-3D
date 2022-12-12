@@ -45,6 +45,8 @@ public class EnemyWaveSpawner : MonoBehaviour
 
         }
 
+        yield return new WaitForSeconds(timeBetweenEnemies * 2f);
+
         if (round % 10 == 0)
             Instantiate(bosses[Random.Range(0,bosses.Length)], spawner.position, Quaternion.identity, parent);
 
