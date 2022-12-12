@@ -1532,8 +1532,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDead: {fileID: 8568279045751905705}
-  EnemyHP: 30
-  hpIncreasePerRound: 1
+  EnemyHP: 50
+  hpIncreasePerRound: 10
 --- !u!114 &-8352429126386781297
 MonoBehaviour:
   m_ObjectHideFlags: 0

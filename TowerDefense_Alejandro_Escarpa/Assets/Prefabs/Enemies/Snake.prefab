@@ -1496,8 +1496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 399051649557693847, guid: 11e75b544c7215642b52ea5424f0b79e, type: 3}
-  agent: {fileID: 0}
-  rb: {fileID: 0}
+  agent: {fileID: -7815316416915107975}
+  rb: {fileID: -7578068087313556787}
   destroyTime: 2
 --- !u!114 &-5937360736369181445
 MonoBehaviour:
@@ -1511,8 +1511,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6d63bc97dbdbd4cbb197d5c4dacdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDead: {fileID: 0}
-  EnemyHP: 30
+  enemyDead: {fileID: -4764053937221943359}
+  EnemyHP: 15
   hpIncreasePerRound: 1
 --- !u!114 &-8152771717129938089
 MonoBehaviour:

@@ -422,9 +422,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6d63bc97dbdbd4cbb197d5c4dacdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDead: {fileID: 0}
-  EnemyHP: 30
-  hpIncreasePerRound: 1
+  enemyDead: {fileID: -374953976507651995}
+  EnemyHP: 50
+  hpIncreasePerRound: 10
 --- !u!114 &7497868853149306723
 MonoBehaviour:
   m_ObjectHideFlags: 0

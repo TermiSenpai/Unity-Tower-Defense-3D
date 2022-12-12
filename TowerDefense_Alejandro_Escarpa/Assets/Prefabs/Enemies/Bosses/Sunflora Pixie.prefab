@@ -110,8 +110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDead: {fileID: 5357781088910380779}
-  EnemyHP: 30
-  hpMultiply: 1.5
+  EnemyHP: 50
+  hpIncreasePerRound: 1
 --- !u!114 &5357781088910380779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 8747707380407689668}
   agent: {fileID: 2539699440632560592}
-  col: {fileID: 7791458834368442814}
   rb: {fileID: 1361741115105474454}
   destroyTime: 2
 --- !u!195 &2539699440632560592
