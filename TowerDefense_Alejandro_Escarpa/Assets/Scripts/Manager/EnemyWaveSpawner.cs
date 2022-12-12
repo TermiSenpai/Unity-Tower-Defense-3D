@@ -7,7 +7,7 @@ using TMPro;
 public class EnemyWaveSpawner : MonoBehaviour
 {
     [SerializeField] GameObject[] enemies;
-    [SerializeField] GameObject boss;
+    [SerializeField] GameObject[] bosses;
     [Space]
     Transform spawner;
     [SerializeField] Transform parent;
@@ -44,8 +44,9 @@ public class EnemyWaveSpawner : MonoBehaviour
             yield return new WaitForSeconds(timeBetweenEnemies);
 
         }
+
         if (round % 10 == 0)
-            Instantiate(boss, spawner.position, Quaternion.identity, parent);
+            Instantiate(bosses[Random.Range(0,bosses.Length)], spawner.position, Quaternion.identity, parent);
 
         canSpawnEnemies = true;
         round++;

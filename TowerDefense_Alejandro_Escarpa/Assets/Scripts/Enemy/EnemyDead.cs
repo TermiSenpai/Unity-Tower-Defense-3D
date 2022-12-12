@@ -10,7 +10,7 @@ public class EnemyDead : MonoBehaviour
     [SerializeField] Animator anim;
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Rigidbody rb;
-    [SerializeField] float destroyTime;
+    [SerializeField] float destroyTime = 2;
 
     public void EnemyHitted()
     {

@@ -13012,7 +13012,7 @@ MonoBehaviour:
   - {fileID: 3978125356112204730, guid: f1a95bd41bac542488d0aa28a882fc00, type: 3}
   - {fileID: 655202435488149648, guid: bbf7d6528d3050941baec581905095ca, type: 3}
   - {fileID: 5509129847841610287, guid: f0b1b6a1816bdca488f3eed5724d5c50, type: 3}
-  boss: {fileID: 8747707380417040920, guid: 6fb8e0a9593d6d742bc3ca8579fe9471, type: 3}
+  bosses: []
   parent: {fileID: 440007803}
   timeBeforeSpawn: 3
   timeBetweenEnemies: 1
