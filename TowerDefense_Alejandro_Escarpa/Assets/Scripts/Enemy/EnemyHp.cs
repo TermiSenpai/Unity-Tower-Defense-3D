@@ -6,14 +6,14 @@ public class EnemyHp : MonoBehaviour
 {
     [SerializeField] EnemyDead enemyDead;
     public int EnemyHP = 30;
-    [SerializeField, Range(1f, 5f)] private float hpMultiply = 1.5f;
+    [SerializeField] private int hpIncreasePerRound = 1;
 
     private EnemyWaveSpawner wave;
     private void Start()
     {
         wave = FindObjectOfType<EnemyWaveSpawner>();
         if (wave.GetRound() > 1)
-            EnemyHP = Mathf.RoundToInt(EnemyHP + wave.GetRound() * hpMultiply);
+            EnemyHP = EnemyHP + (wave.GetRound() * hpIncreasePerRound);
     }
 
     public void Dmg(int DMGcount)
