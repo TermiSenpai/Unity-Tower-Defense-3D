@@ -11,14 +11,19 @@ public class TorretShooting : MonoBehaviour
     [SerializeField] private int bulletDamage;
     [SerializeField] private float fireRate;
     [SerializeField] private float fireCountdown;
-    [SerializeField] private TurretPivotRotate turretPivotRotate;
+    private TargetSearching targetSearching;
+
+    private void Start()
+    {
+        targetSearching = GetComponent<TargetSearching>();
+    }
 
     private void Update()
     {
         fireCountdown -= Time.deltaTime;
 
         // If enemy in range, shoot
-        if (fireCountdown <= 0f && turretPivotRotate.HaveTarget())
+        if (fireCountdown <= 0f && targetSearching.HaveTarget())
         {
             Shoot();
             fireCountdown = 1f / fireRate;
@@ -34,7 +39,7 @@ public class TorretShooting : MonoBehaviour
 
         if (bullet != null)
         {
-            bullet.EnemySeek(turretPivotRotate.GetTarget());
+            bullet.EnemySeek(targetSearching.GetTarget());
 
             bullet.BulletDamage(bulletDamage);
         }
