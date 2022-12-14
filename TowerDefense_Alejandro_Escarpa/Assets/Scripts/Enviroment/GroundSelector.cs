@@ -23,6 +23,15 @@ public class GroundSelector : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
+    private void Update()
+    {
+        // test
+        if (buildManager.GetTurretToBuild() != null)
+            if (Input.GetMouseButtonDown(1))
+                buildManager.SetTurretToBuild(null);
+
+    }
+
     private void OnMouseDown()
     {
         if (EventSystem.current.IsPointerOverGameObject()) return;
@@ -57,11 +66,16 @@ public class GroundSelector : MonoBehaviour
         if (EventSystem.current.IsPointerOverGameObject()) return;
         if (buildManager.GetTurretToBuild() == null) return;
 
-        rend.material.color = hoverColor;
+        SetBlockColor(hoverColor);
     }
 
     private void OnMouseExit()
     {
-        rend.material.color = starterColor;
+        SetBlockColor(starterColor);
+    }
+
+    private void SetBlockColor(Color newColor)
+    {
+        rend.material.color = newColor;
     }
 }
