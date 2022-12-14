@@ -15,8 +15,14 @@ public class GroundSelector : MonoBehaviour
 
     private BuildManager buildManager;
 
+    private bool isDevBuild = false;
+
     private void Start()
     {
+#if DEVELOPMENT_BUILD
+    isDevBuild = true;
+#endif
+
         turretParent = GameObject.FindGameObjectWithTag("TurretParent").GetComponent<Transform>();
         rend = GetComponent<Renderer>();
         starterColor = rend.material.color;
@@ -57,8 +63,9 @@ public class GroundSelector : MonoBehaviour
         turret = (GameObject)Instantiate(turretToBuild, transform.position + (Vector3.up * transform.localScale.x), transform.rotation, turretParent);
 
         // Testing
+        if (!isDevBuild)
+            buildManager.SetTurretToBuild(null);
 
-        //buildManager.SetTurretToBuild(null);
     }
 
     private void OnMouseEnter()
