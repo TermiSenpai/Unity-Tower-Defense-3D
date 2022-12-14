@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: -3922000839179516235}
   - component: {fileID: 8627922958430486481}
   - component: {fileID: 2075636422}
+  - component: {fileID: 6446465293464349737}
   - component: {fileID: 7354724834528072997}
   - component: {fileID: 4735131592893283138}
   m_Layer: 0
@@ -179,7 +180,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590138e85104721418af6d46ee7bd70d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSearching: {fileID: -3922000839179516235}
   partToRotate: {fileID: 8627922958413849552}
   rotateTime: 10
 --- !u!114 &2075636422
@@ -194,12 +194,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1deedaf91416dac4086406ff00b48457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8173930509240250855, guid: 9331d57665aa4414ba09b289723fcf79, type: 3}
   firePoint: {fileID: 1476897570}
-  bulletDamage: 5
-  fireRate: 1
-  fireCountdown: 0.5
-  targetSearching: {fileID: -3922000839179516235}
+--- !u!114 &6446465293464349737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627922958414151668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6fd7870d62e7b4c80d40aec7c1c33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turret: {fileID: 11400000, guid: 0448242d33417d545ba8cdf2bb9843bc, type: 2}
 --- !u!33 &7354724834528072997
 MeshFilter:
   m_ObjectHideFlags: 0

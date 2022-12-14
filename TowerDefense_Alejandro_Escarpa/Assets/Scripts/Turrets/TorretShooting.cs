@@ -6,27 +6,26 @@ using UnityEngine;
 
 public class TorretShooting : MonoBehaviour
 {
-    [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
-    [SerializeField] private int bulletDamage;
-    [SerializeField] private float fireRate;
-    [SerializeField] private float fireCountdown;
     private TargetSearching targetSearching;
+    private float cooldown = 0;
+    private TurretStats stats;
 
     private void Start()
     {
+        stats = GetComponent<TurretStats>();
         targetSearching = GetComponent<TargetSearching>();
     }
 
     private void Update()
     {
-        fireCountdown -= Time.deltaTime;
+        cooldown -= Time.deltaTime;
 
         // If enemy in range, shoot
-        if (fireCountdown <= 0f && targetSearching.HaveTarget())
+        if (cooldown <= 0f && targetSearching.HaveTarget())
         {
             Shoot();
-            fireCountdown = 1f / fireRate;
+            cooldown = 1f / stats.turret.fireRate;
         }
 
 
@@ -34,14 +33,14 @@ public class TorretShooting : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject bulletGo = (GameObject)Instantiate(stats.turret.bullet, firePoint.position, firePoint.rotation);
         MovementBullets bullet = bulletGo.GetComponent<MovementBullets>();
 
         if (bullet != null)
         {
             bullet.EnemySeek(targetSearching.GetTarget());
 
-            bullet.BulletDamage(bulletDamage);
+            bullet.BulletDamage(stats.turret.damage);
         }
     }
 }

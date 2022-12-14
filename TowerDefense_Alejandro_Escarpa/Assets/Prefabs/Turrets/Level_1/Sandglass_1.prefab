@@ -5114,6 +5114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5517195735428388075}
   - component: {fileID: 5606318096852944487}
+  - component: {fileID: 6822532857492903073}
   m_Layer: 0
   m_Name: Sandglass_1
   m_TagString: Untagged
@@ -5162,6 +5163,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6822532857492903073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5519676717197555637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6fd7870d62e7b4c80d40aec7c1c33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turret: {fileID: 11400000, guid: bdece7a549b697b4293ce6c6a1815c5c, type: 2}
 --- !u!1 &5519968698424129901
 GameObject:
   m_ObjectHideFlags: 0

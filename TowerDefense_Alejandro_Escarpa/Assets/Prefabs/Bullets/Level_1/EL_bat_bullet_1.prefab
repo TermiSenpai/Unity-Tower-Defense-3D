@@ -19477,7 +19477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4584822743968394}
   - component: {fileID: 65273742937535544}
-  - component: {fileID: 114080517626201944}
+  - component: {fileID: -764686054010811601}
   m_Layer: 0
   m_Name: EL_bat_bullet_1
   m_TagString: Untagged
@@ -19514,7 +19514,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114080517626201944
+--- !u!114 &-764686054010811601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19523,11 +19523,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1974867370617378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 807a988a1765edd439007be8fbee2c70, type: 3}
+  m_Script: {fileID: 11500000, guid: ad0344b2ce0bff5438217fc548beca3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 8
-  target: {fileID: 0}
-  impactParticle: {fileID: 1919017708311484, guid: fcc576e1d07bcb244a0ac090c6348f19, type: 3}
-  impactNormal: {x: 0, y: 0, z: 0}
-  twr: {fileID: 0}
+  speed: 8
+  hitParticle: {fileID: 4271093393614929224, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}

@@ -4867,6 +4867,7 @@ GameObject:
   - component: {fileID: 370346803421547402}
   - component: {fileID: 7979823665157747308}
   - component: {fileID: 2341729614611422493}
+  - component: {fileID: 3548662951301733723}
   - component: {fileID: 1877247150350113237}
   - component: {fileID: 1885071023797698769}
   m_Layer: 0
@@ -4905,8 +4906,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f16f4750882144ba2d3ea8047cbb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyTag: Enemy
-  range: 6
 --- !u!114 &7979823665157747308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4933,11 +4932,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1deedaf91416dac4086406ff00b48457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2989649144817240051, guid: 3f6dd38832f16804ea56f95a4c881535, type: 3}
   firePoint: {fileID: 1895476527085412923}
-  bulletDamage: 10
-  fireRate: 1.25
-  fireCountdown: 0
+--- !u!114 &3548662951301733723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899257949373414277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6fd7870d62e7b4c80d40aec7c1c33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turret: {fileID: 11400000, guid: f7be6780e28c311468fdd177c193d2d3, type: 2}
 --- !u!23 &1877247150350113237
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -5,13 +5,14 @@ using static UnityEngine.GraphicsBuffer;
 
 public class TargetSearching : MonoBehaviour
 {
+    private TurretStats stats;
     private Transform target;
-    [SerializeField] private string enemyTag = "Enemy";
-    [SerializeField] private float range = 6;
+    private string enemyTag = "Enemy";
     private float updateTime = 0.5f;
 
     private void Start()
     {
+        stats = GetComponent<TurretStats>();
         StartCoroutine(UpdateTarget());
     }
 
@@ -34,7 +35,7 @@ public class TargetSearching : MonoBehaviour
                 }
             }
 
-            if (nearestEnemy != null && shortestDistance <= range)
+            if (nearestEnemy != null && shortestDistance <= stats.turret.range)
             {
                 target = nearestEnemy.transform;
             }
@@ -61,6 +62,6 @@ public class TargetSearching : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, range);
+        Gizmos.DrawWireSphere(transform.position, stats.turret.range);
     }
 }
