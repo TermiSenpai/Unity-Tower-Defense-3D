@@ -15,6 +15,5 @@ MonoBehaviour:
   damage: 5
   range: 6
   fireRate: 1
-  cooldown: -82.1542
   attackDescription: Shooting enemy!
   bullet: {fileID: 1974867370617378, guid: 9331e4309bb59ce4db311583b0fa0791, type: 3}

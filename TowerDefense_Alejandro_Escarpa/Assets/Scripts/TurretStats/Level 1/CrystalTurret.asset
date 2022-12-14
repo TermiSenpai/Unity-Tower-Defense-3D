@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 7
   range: 6
-  fireRate: 1.1
-  cooldown: 0.75
+  fireRate: 0.9
   attackDescription: Shooting enemy!
   bullet: {fileID: 2581957555105157303, guid: 34dea79641683ca4c9b377d6af5539cb, type: 3}
