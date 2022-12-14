@@ -124,6 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8627922958413849556}
+  - component: {fileID: -3922000839179516235}
   - component: {fileID: 8627922958430486481}
   - component: {fileID: 2075636422}
   - component: {fileID: 7354724834528072997}
@@ -152,6 +153,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3922000839179516235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627922958414151668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44f16f4750882144ba2d3ea8047cbb88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTag: Enemy
+  range: 6
 --- !u!114 &8627922958430486481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,9 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590138e85104721418af6d46ee7bd70d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  range: 6
-  enemyTag: Enemy
+  targetSearching: {fileID: -3922000839179516235}
   partToRotate: {fileID: 8627922958413849552}
   rotateTime: 10
 --- !u!114 &2075636422
@@ -186,7 +199,7 @@ MonoBehaviour:
   bulletDamage: 5
   fireRate: 1
   fireCountdown: 0.5
-  turretPivotRotate: {fileID: 8627922958430486481}
+  targetSearching: {fileID: -3922000839179516235}
 --- !u!33 &7354724834528072997
 MeshFilter:
   m_ObjectHideFlags: 0

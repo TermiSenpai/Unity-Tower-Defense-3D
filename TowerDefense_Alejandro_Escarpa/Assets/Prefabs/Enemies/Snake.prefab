@@ -1495,7 +1495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d87781aeb354a1a42b1d3a292c9e28a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 399051649557693847, guid: 11e75b544c7215642b52ea5424f0b79e, type: 3}
+  anim: {fileID: 2610392148624880130}
   agent: {fileID: -7815316416915107975}
   rb: {fileID: -7578068087313556787}
   destroyTime: 2

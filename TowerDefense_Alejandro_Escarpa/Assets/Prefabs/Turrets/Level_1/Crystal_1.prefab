@@ -40,10 +40,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1291001718102411754}
-  - component: {fileID: 1291001718101608906}
-  - component: {fileID: 1291001718100511498}
+  - component: {fileID: -3622057910344839168}
   - component: {fileID: 9017033329936642537}
   - component: {fileID: 9017033329936642539}
+  - component: {fileID: 1291001718101608906}
+  - component: {fileID: 1291001718100511498}
   m_Layer: 0
   m_Name: Crystal_1
   m_TagString: Untagged
@@ -67,6 +68,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3622057910344839168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291001718102709706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44f16f4750882144ba2d3ea8047cbb88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTag: Enemy
+  range: 6
+--- !u!114 &9017033329936642537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291001718102709706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 590138e85104721418af6d46ee7bd70d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partToRotate: {fileID: 1291001718102411754}
+  rotateTime: 0
+--- !u!114 &9017033329936642539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291001718102709706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1deedaf91416dac4086406ff00b48457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1607217979833398, guid: 1513fb808c98dfa4b85a0eea8d56aed1, type: 3}
+  firePoint: {fileID: 16428442}
+  bulletDamage: 7
+  fireRate: 1.1
+  fireCountdown: 0
 --- !u!33 &1291001718101608906
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -117,38 +163,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9017033329936642537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291001718102709706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 590138e85104721418af6d46ee7bd70d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  range: 6
-  enemyTag: Enemy
-  partToRotate: {fileID: 1291001718102411754}
-  rotateTime: 0
---- !u!114 &9017033329936642539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291001718102709706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1deedaf91416dac4086406ff00b48457, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1607217979833398, guid: 1513fb808c98dfa4b85a0eea8d56aed1, type: 3}
-  firePoint: {fileID: 16428442}
-  bulletDamage: 7
-  fireRate: 0.8
-  fireCountdown: 0
-  turretPivotRotate: {fileID: 9017033329936642537}
