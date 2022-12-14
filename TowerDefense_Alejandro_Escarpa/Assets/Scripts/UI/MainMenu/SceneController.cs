@@ -10,6 +10,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void LengthSelect(float value)
+    {
+        PlayerPrefs.SetFloat("LengthMultiplier", value);
+    }
+
     public void ExitGame()
     {
         Application.Quit();

@@ -5494,7 +5494,7 @@ MonoBehaviour:
     OverrideAllowTileRotation: 0
     AllowTileRotation: 0
     DebugRender: 0
-    LengthMultiplier: 0.5
+    LengthMultiplier: 1
     PlaceTileTriggers: 0
     TileTriggerLayer: 2
     GenerateAsynchronously: 0
@@ -5895,6 +5895,7 @@ GameObject:
   - component: {fileID: 1734884831}
   - component: {fileID: 1734884833}
   - component: {fileID: 1734884834}
+  - component: {fileID: 1734884835}
   m_Layer: 0
   m_Name: Manager
   m_TagString: GameController
@@ -5972,6 +5973,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverMenu: {fileID: 1724804398}
+--- !u!114 &1734884835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734884830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f8e765737efdf843a44b98ecda849fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1744036820
 GameObject:
   m_ObjectHideFlags: 0
