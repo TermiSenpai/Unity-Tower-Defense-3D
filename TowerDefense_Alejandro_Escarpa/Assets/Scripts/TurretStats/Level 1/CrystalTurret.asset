@@ -17,3 +17,5 @@ MonoBehaviour:
   fireRate: 0.9
   attackDescription: Shooting enemy!
   bullet: {fileID: 2581957555105157303, guid: 34dea79641683ca4c9b377d6af5539cb, type: 3}
+  cost: 200
+  prefab: {fileID: 1291001718102709706, guid: 7f2554a9e86dbd24db4277b48c3924e9, type: 3}

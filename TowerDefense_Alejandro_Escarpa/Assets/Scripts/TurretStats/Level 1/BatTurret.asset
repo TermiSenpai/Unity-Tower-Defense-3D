@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
   m_Name: BatTurret
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 3
   range: 6
   fireRate: 1
   attackDescription: Shooting enemy!
   bullet: {fileID: 1974867370617378, guid: 9331e4309bb59ce4db311583b0fa0791, type: 3}
+  cost: 100
+  prefab: {fileID: 8627922958414151668, guid: f190cbbb1d264884aa8756103cee8f00, type: 3}

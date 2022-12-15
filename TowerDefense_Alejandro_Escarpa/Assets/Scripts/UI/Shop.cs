@@ -1,4 +1,4 @@
- using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
@@ -6,9 +6,12 @@ using UnityEngine;
 public class Shop : MonoBehaviour
 {
 
-   public void PurchaseTurret(GameObject turret)
+    public void PurchaseTurret(Turret turret)
     {
-        BuildManager.instance.SetTurretToBuild(turret);
-        Debug.Log($"The {turret} has been purchased");
+        if (Currency.Money >= turret.cost)
+        {
+            BuildManager.instance.SetTurretToBuild(turret);
+            Debug.Log($"The {turret} has been purchased");
+        }
     }
 }

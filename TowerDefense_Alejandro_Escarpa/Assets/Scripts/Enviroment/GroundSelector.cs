@@ -9,69 +9,45 @@ public class GroundSelector : MonoBehaviour
 {
     [SerializeField] private Color hoverColor;
     [SerializeField] private GameObject turret;
-    private Transform turretParent;
+    
     public Color starterColor;
     private Renderer rend;
 
     private BuildManager buildManager;
 
-    private bool isDevBuild = false;
 
     private void Start()
     {
-#if DEVELOPMENT_BUILD
-    isDevBuild = true;
-#endif
-
-        turretParent = GameObject.FindGameObjectWithTag("TurretParent").GetComponent<Transform>();
+       
         rend = GetComponent<Renderer>();
         starterColor = rend.material.color;
         buildManager = BuildManager.instance;
     }
 
-    private void Update()
-    {
-        // test
-        if (buildManager.GetTurretToBuild() != null)
-            if (Input.GetMouseButtonDown(1))
-                buildManager.SetTurretToBuild(null);
-
-    }
 
     private void OnMouseDown()
     {
         if (EventSystem.current.IsPointerOverGameObject()) return;
 
-        GameObject turretToBuild = buildManager.GetTurretToBuild();
+        if (!buildManager.CanBuild) return;
 
-
-        if (turret != null && turretToBuild != null)
+        if (turret != null)
         {
             Debug.Log("Can´t build there!");
             return;
         }
 
-        // Show turret range on click
-        if (turret != null && turretToBuild == null)
-        {
-            Debug.Log(turret);
-        }
 
 
-        if (turretToBuild == null) return;
+        buildManager.BuildTurretOn(this);
 
-        turret = (GameObject)Instantiate(turretToBuild, transform.position + (Vector3.up * transform.localScale.x), transform.rotation, turretParent);
-
-        // Testing
-        if (!isDevBuild)
-            buildManager.SetTurretToBuild(null);
 
     }
 
     private void OnMouseEnter()
     {
         if (EventSystem.current.IsPointerOverGameObject()) return;
-        if (buildManager.GetTurretToBuild() == null) return;
+        if (!buildManager.CanBuild) return;
 
         SetBlockColor(hoverColor);
     }
@@ -84,5 +60,15 @@ public class GroundSelector : MonoBehaviour
     private void SetBlockColor(Color newColor)
     {
         rend.material.color = newColor;
+    }
+
+    public Vector3 GetBuildPos()
+    {
+        return transform.position + (Vector3.up * transform.localScale.x);
+    }
+
+    public void SetBuildedTurret(GameObject newTurret)
+    {
+        turret = newTurret;
     }
 }

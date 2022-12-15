@@ -14,4 +14,10 @@ public class Turret : ScriptableObject
 
     [Header("Shooting")]
     public GameObject bullet;
+
+    [Space]
+    [Header("Currency")]
+    public int cost;
+    public GameObject prefab;
+
 }
