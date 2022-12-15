@@ -128,6 +128,7 @@ MonoBehaviour:
   agent: {fileID: 2539699440632560592}
   rb: {fileID: 1361741115105474454}
   destroyTime: 2
+  moneyToPlayer: 1000
 --- !u!195 &2539699440632560592
 NavMeshAgent:
   m_ObjectHideFlags: 0

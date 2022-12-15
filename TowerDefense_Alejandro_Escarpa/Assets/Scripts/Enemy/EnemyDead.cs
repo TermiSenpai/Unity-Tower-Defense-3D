@@ -11,7 +11,7 @@ public class EnemyDead : MonoBehaviour
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Rigidbody rb;
     [SerializeField] float destroyTime = 2;
-
+    [SerializeField] int moneyToPlayer;
     public void EnemyHitted()
     {
         anim.SetTrigger("Damaged");
@@ -32,5 +32,10 @@ public class EnemyDead : MonoBehaviour
         anim.SetTrigger("Dead");
         agent.enabled = false;
         Destroy(gameObject, destroyTime);
+    }
+
+    private void OnDestroy()
+    {
+        Currency.Money += moneyToPlayer;
     }
 }

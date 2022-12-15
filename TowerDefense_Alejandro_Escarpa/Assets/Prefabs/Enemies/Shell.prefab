@@ -1081,6 +1081,7 @@ MonoBehaviour:
   agent: {fileID: 8796409664838775362}
   rb: {fileID: 7196950857538252712}
   destroyTime: 2
+  moneyToPlayer: 50
 --- !u!114 &3258242323625705544
 MonoBehaviour:
   m_ObjectHideFlags: 0

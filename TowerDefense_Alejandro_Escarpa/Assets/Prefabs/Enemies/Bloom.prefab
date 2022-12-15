@@ -1179,7 +1179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyDead: {fileID: 5367352002872435958}
   EnemyHP: 10
-  hpMultiply: 1.5
+  hpIncreasePerRound: 1
 --- !u!114 &5367352002872435958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1194,9 +1194,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 8185730107035891960}
   agent: {fileID: 1603627183491770513}
-  col: {fileID: 6082935969582177069}
   rb: {fileID: 9063132955212280747}
   destroyTime: 2
+  moneyToPlayer: 100
 --- !u!54 &9063132955212280747
 Rigidbody:
   m_ObjectHideFlags: 0
