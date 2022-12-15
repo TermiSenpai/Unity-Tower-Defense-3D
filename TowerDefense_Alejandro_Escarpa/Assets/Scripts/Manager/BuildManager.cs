@@ -31,7 +31,7 @@ public class BuildManager : MonoBehaviour
         // test
         if (CanBuild)
             if (Input.GetMouseButtonDown(1))
-                SetTurretToBuild(null);
+                turretToBuild = null;
 
     }
 

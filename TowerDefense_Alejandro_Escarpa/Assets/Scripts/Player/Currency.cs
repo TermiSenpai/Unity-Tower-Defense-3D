@@ -24,5 +24,8 @@ public class Currency : MonoBehaviour
             moneyToUI.SetMoneyToUI(Money.ToString());
             lastAmountOfMoney = Money;
         }
+
+        if (Money <= 0)
+            Money = 0;
     }
 }

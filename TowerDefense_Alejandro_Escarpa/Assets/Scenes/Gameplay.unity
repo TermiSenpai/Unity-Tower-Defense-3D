@@ -845,7 +845,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -1
+  m_text: -100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1790,7 +1790,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +10
+  m_text: +1000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2071,7 +2071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &366687496
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3937,7 +3937,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 475273959}
   m_Direction: 0
   m_MinValue: 1
-  m_MaxValue: 100
+  m_MaxValue: 30
   m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
@@ -6250,7 +6250,7 @@ GameObject:
   - component: {fileID: 1089631659}
   - component: {fileID: 1089631658}
   m_Layer: 5
-  m_Name: +1
+  m_Name: +100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6274,8 +6274,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 210, y: -50}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 135, y: -50}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1089631658
 MonoBehaviour:
@@ -6321,14 +6321,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1169124271}
-        m_TargetAssemblyTypeName: RoundCheat, Assembly-CSharp
-        m_MethodName: changeRound
+      - m_Target: {fileID: 1774305988}
+        m_TargetAssemblyTypeName: MoneyCheat, Assembly-CSharp
+        m_MethodName: AddMoney
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 100
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6926,7 +6926,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -10
+  m_text: -1000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8209,7 +8209,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +1
+  m_text: +100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8592,7 +8592,7 @@ GameObject:
   - component: {fileID: 1549484851}
   - component: {fileID: 1549484850}
   m_Layer: 5
-  m_Name: +10
+  m_Name: +1000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8616,8 +8616,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 270, y: -50}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 245, y: -50}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1549484850
 MonoBehaviour:
@@ -8663,14 +8663,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1169124271}
-        m_TargetAssemblyTypeName: RoundCheat, Assembly-CSharp
-        m_MethodName: changeRound
+      - m_Target: {fileID: 1774305988}
+        m_TargetAssemblyTypeName: MoneyCheat, Assembly-CSharp
+        m_MethodName: AddMoney
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
+          m_IntArgument: 1000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10322,6 +10322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1774305987}
+  - component: {fileID: 1774305988}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -10351,6 +10352,18 @@ RectTransform:
   m_AnchoredPosition: {x: 300, y: -475}
   m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1774305988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774305986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3b9f77a19d8de44a5988d8be22634b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1783588592
 GameObject:
   m_ObjectHideFlags: 0
@@ -10543,7 +10556,7 @@ GameObject:
   - component: {fileID: 1820288514}
   - component: {fileID: 1820288513}
   m_Layer: 5
-  m_Name: -10
+  m_Name: -1000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10567,8 +10580,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 330, y: -50}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 355, y: -50}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1820288513
 MonoBehaviour:
@@ -10614,14 +10627,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1169124271}
-        m_TargetAssemblyTypeName: RoundCheat, Assembly-CSharp
-        m_MethodName: changeRound
+      - m_Target: {fileID: 1774305988}
+        m_TargetAssemblyTypeName: MoneyCheat, Assembly-CSharp
+        m_MethodName: AddMoney
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -10
+          m_IntArgument: -1000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11105,7 +11118,7 @@ GameObject:
   - component: {fileID: 1859418968}
   - component: {fileID: 1859418967}
   m_Layer: 5
-  m_Name: -1
+  m_Name: -100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11129,8 +11142,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 390, y: -50}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 465, y: -50}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1859418967
 MonoBehaviour:
@@ -11176,14 +11189,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1169124271}
-        m_TargetAssemblyTypeName: RoundCheat, Assembly-CSharp
-        m_MethodName: changeRound
+      - m_Target: {fileID: 1774305988}
+        m_TargetAssemblyTypeName: MoneyCheat, Assembly-CSharp
+        m_MethodName: AddMoney
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -1
+          m_IntArgument: -100
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
