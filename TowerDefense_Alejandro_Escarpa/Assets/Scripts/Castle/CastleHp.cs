@@ -19,7 +19,7 @@ public class CastleHp : MonoBehaviour
         {
             health = 0;
             isDead = true;
-            GameOverManager.instance.ShowGameOverMenu();
+            GameOverManager.instance.GameOver();
         }
 
         Debug.Log($"you have {health} left");

@@ -34,7 +34,7 @@ public class EnemyWaveSpawner : MonoBehaviour
     IEnumerator IEnemyWaveSpawner()
     {
         canSpawnEnemies = false;
-        roundTxt.text = $"Round {round}";
+        changeRoundTxt();
         Debug.Log("Wave Incoming!");
         yield return new WaitForSeconds(timeBeforeSpawn);
 
@@ -55,5 +55,20 @@ public class EnemyWaveSpawner : MonoBehaviour
     }
 
     public int GetRound() { return round; }
+
+    public void SetRound(int value)
+    {
+        round = value;
+    }
+
+    public void ChangeRound(int value)
+    {
+        round += value;
+    }
+
+    public void changeRoundTxt()
+    {
+        roundTxt.text = $"Round {round}";
+    }
 
 }
