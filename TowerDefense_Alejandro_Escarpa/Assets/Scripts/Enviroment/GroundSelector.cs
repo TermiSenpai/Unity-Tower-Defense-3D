@@ -8,7 +8,7 @@ using UnityEngine.EventSystems;
 public class GroundSelector : MonoBehaviour
 {
     [SerializeField] private Color hoverColor;
-    [SerializeField] private GameObject turret;
+    [SerializeField] private Turret turret;
     
     public Color starterColor;
     private Renderer rend;
@@ -29,13 +29,18 @@ public class GroundSelector : MonoBehaviour
     {
         if (EventSystem.current.IsPointerOverGameObject()) return;
 
-        if (!buildManager.CanBuild) return;
-
-        if (turret != null)
+        if (turret != null && buildManager.CanBuild)
         {
             Debug.Log("Can´t build there!");
             return;
         }
+
+        if (!buildManager.CanBuild)
+        {
+            buildManager.SelectGround(this);
+            return;
+        }
+
 
         buildManager.BuildTurretOn(this);
     }
@@ -63,8 +68,13 @@ public class GroundSelector : MonoBehaviour
         return transform.position + (Vector3.up * transform.localScale.x);
     }
 
-    public void SetBuildedTurret(GameObject newTurret)
+    public void SetBuildedTurret(Turret newTurret)
     {
         turret = newTurret;
+    }
+
+    public Turret GetBuildedTurret()
+    {
+        return turret;
     }
 }

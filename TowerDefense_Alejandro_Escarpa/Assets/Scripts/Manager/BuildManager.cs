@@ -6,8 +6,7 @@ public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
 
-    [SerializeField] private GameObject turretToBuild;
-    private int turretCost;
+    [SerializeField] private Turret turretToBuild;
     [SerializeField] private Transform turretParent;
 
     private void Awake()
@@ -33,17 +32,22 @@ public class BuildManager : MonoBehaviour
 
     public void BuildTurretOn(GroundSelector ground)
     {
-        if (Currency.Money < turretCost)
+        if (Currency.Money < turretToBuild.cost)
         {
             Debug.Log("Not enought money to build");
             turretToBuild = null;
             return;
         }
-        Currency.Money -= turretCost;
-        GameObject turret = Instantiate(turretToBuild, ground.GetBuildPos(), Quaternion.identity, turretParent);
-        ground.SetBuildedTurret(turret);
+        Currency.Money -= turretToBuild.cost;
+        Instantiate(turretToBuild.prefab, ground.GetBuildPos(), Quaternion.identity, turretParent);
+        ground.SetBuildedTurret(turretToBuild);
 
 
+    }
+
+    public void SelectGround(GroundSelector ground)
+    {
+        Debug.Log(ground.GetBuildedTurret());
     }
 
 
@@ -55,9 +59,8 @@ public class BuildManager : MonoBehaviour
         {
             Debug.Log("Not enought money to buy");
             return;
-        }
-        turretCost = turret.cost;
-        turretToBuild = turret.prefab;
+        }        
+        turretToBuild = turret;
 
     }
 
