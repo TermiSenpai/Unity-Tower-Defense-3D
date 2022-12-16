@@ -37,11 +37,7 @@ public class GroundSelector : MonoBehaviour
             return;
         }
 
-
-
         buildManager.BuildTurretOn(this);
-
-
     }
 
     private void OnMouseEnter()
