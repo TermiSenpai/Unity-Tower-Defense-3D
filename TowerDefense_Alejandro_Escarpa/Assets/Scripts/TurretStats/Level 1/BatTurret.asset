@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
   m_Name: BatTurret
   m_EditorClassIdentifier: 
+  turretName: Crossbow
+  turretImg: {fileID: 21300000, guid: 49949f742293e394bb3e6526c5ebf530, type: 3}
   damage: 3
   range: 6
   fireRate: 1

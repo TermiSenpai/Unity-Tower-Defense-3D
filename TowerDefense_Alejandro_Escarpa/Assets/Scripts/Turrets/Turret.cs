@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = ("Turret"), menuName = ("New turret"))]
 public class Turret : ScriptableObject
 {
+    [Header("Info")]
+    public string turretName;
+    public Sprite turretImg;
+
     [Header("Stats")]
     public int damage;
     public float range = 6;

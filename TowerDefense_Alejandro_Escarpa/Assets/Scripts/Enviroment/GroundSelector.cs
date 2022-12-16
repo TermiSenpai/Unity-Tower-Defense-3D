@@ -35,7 +35,7 @@ public class GroundSelector : MonoBehaviour
             return;
         }
 
-        if (!buildManager.CanBuild)
+        if (turret != null && !buildManager.CanBuild)
         {
             buildManager.SelectGround(this);
             return;

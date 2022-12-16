@@ -8,6 +8,8 @@ public class BuildManager : MonoBehaviour
 
     [SerializeField] private Turret turretToBuild;
     [SerializeField] private Transform turretParent;
+    private GroundSelector selectedGround;
+    [SerializeField] ShowTurretInfo turretInfo;
 
     private void Awake()
     {
@@ -47,7 +49,8 @@ public class BuildManager : MonoBehaviour
 
     public void SelectGround(GroundSelector ground)
     {
-        Debug.Log(ground.GetBuildedTurret());
+        selectedGround = ground;
+        turretInfo.ShowInfo(ground.GetBuildedTurret());
     }
 
 
@@ -59,7 +62,7 @@ public class BuildManager : MonoBehaviour
         {
             Debug.Log("Not enought money to buy");
             return;
-        }        
+        }
         turretToBuild = turret;
 
     }

@@ -936,6 +936,7 @@ GameObject:
   - component: {fileID: 160055103}
   - component: {fileID: 160055107}
   - component: {fileID: 160055108}
+  - component: {fileID: 160055109}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -1056,6 +1057,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateInterval: 0.5
+--- !u!114 &160055109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160055102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d0403fcec585a8459de21b8531aebc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiPanels: {fileID: 160055107}
+  turretInfoPanel: {fileID: 1119673946}
+  turretName: {fileID: 612895379}
+  turretImage: {fileID: 1830055596}
+  turretDamage: {fileID: 1970942020}
 --- !u!1 &174016357
 GameObject:
   m_ObjectHideFlags: 0
@@ -3620,7 +3638,7 @@ GameObject:
   - component: {fileID: 612895380}
   - component: {fileID: 612895379}
   m_Layer: 5
-  m_Name: SpeedTxt
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4611,7 +4629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -14}
+  m_AnchoredPosition: {x: 150, y: -14}
   m_SizeDelta: {x: 150, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &747084561
@@ -7480,8 +7498,6 @@ GameObject:
   - component: {fileID: 1119673952}
   - component: {fileID: 1119673951}
   - component: {fileID: 1119673950}
-  - component: {fileID: 1119673949}
-  - component: {fileID: 1119673948}
   m_Layer: 5
   m_Name: InfoTurret
   m_TagString: Untagged
@@ -7513,31 +7529,6 @@ RectTransform:
   m_AnchoredPosition: {x: 300, y: -360}
   m_SizeDelta: {x: 600, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1119673948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119673946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c05bcb01af8e5b94c82b282cff7352e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wave: {fileID: 1734884831}
---- !u!114 &1119673949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119673946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 161e77060d1269147bd3f6d1f7270177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1119673950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11215,6 +11206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretToBuild: {fileID: 0}
   turretParent: {fileID: 1637404136}
+  turretInfo: {fileID: 160055109}
 --- !u!114 &1734884834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13810,7 +13802,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281116142
-  m_fontColor: {r: 0.9339623, g: 0.6451279, b: 0.17181383, a: 1}
+  m_fontColor: {r: 0.93333334, g: 0.19610316, b: 0.17254901, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -14318,7 +14310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2087959719
 RectTransform:
   m_ObjectHideFlags: 0
