@@ -17,4 +17,11 @@ public class ShopPrice : MonoBehaviour
     {
         priceTxt.text = turret.cost.ToString();
     }
+
+    private void Update()
+    {
+        if (Currency.Money < turret.cost)
+            priceTxt.color = Color.red;
+        else priceTxt.color = Color.green;
+    }
 }
