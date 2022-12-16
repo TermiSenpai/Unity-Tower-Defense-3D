@@ -13,7 +13,7 @@ public class EnemyTowerCollision : MonoBehaviour
             Destroy(other.gameObject);
             // if not dead
             if (!castle.GetIsDead())
-                castle.HitCastle(damage);
+                castle.HitCastle(other.gameObject.GetComponent<EnemyDamage>().damage);
         }
 
     }

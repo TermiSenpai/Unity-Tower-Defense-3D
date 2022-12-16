@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2539699440632560592}
   - component: {fileID: 7791458834368442814}
   - component: {fileID: 1361741115105474454}
+  - component: {fileID: -63880273592302460}
   m_Layer: 0
   m_Name: Sunflora Pixie
   m_TagString: Enemy
@@ -180,6 +181,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-63880273592302460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747707380417040920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986cbade2f7a0e744849f6224b1a38dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
 --- !u!1 &8747707380417040960
 GameObject:
   m_ObjectHideFlags: 0
