@@ -27,15 +27,11 @@ public class EnemyDead : MonoBehaviour
             transform.position = newpos;
         }
 
+        Currency.Money += moneyToPlayer;
         rb.isKinematic = true;
         gameObject.tag = "Dead"; // send it to TowerTrigger to stop the shooting
         anim.SetTrigger("Dead");
         agent.enabled = false;
         Destroy(gameObject, destroyTime);
-    }
-
-    private void OnDestroy()
-    {
-        Currency.Money += moneyToPlayer;
     }
 }
