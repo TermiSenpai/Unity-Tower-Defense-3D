@@ -10,13 +10,8 @@ public class BuildManager : MonoBehaviour
     private int turretCost;
     [SerializeField] private Transform turretParent;
 
-
-    private bool isDevBuild = false;
     private void Awake()
     {
-#if DEVELOPMENT_BUILD
-    isDevBuild = true;
-#endif
 
         if (instance != null)
         {
