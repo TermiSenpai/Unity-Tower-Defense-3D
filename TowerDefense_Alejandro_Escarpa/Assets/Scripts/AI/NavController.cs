@@ -8,6 +8,7 @@ public class NavController : MonoBehaviour
     Transform target;
     NavMeshAgent agent;
     float baseSpeed;
+    bool isSlow;
 
     private void Start()
     {
@@ -19,14 +20,29 @@ public class NavController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Slow"))
+        if (other.gameObject.CompareTag("Slow") && !isSlow)
+        {
             SlowEnemy(other.gameObject.GetComponent<SlowManager>().GetSlowPercent());
+            isSlow= true;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Slow") && !isSlow)
+        {
+            SlowEnemy(other.gameObject.GetComponent<SlowManager>().GetSlowPercent());
+            isSlow = true;
+        }        
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Slow"))
+        if (other.gameObject.CompareTag("Slow") && isSlow)
+        {
+            isSlow = false;
             EnemyBaseSpeed();
+        }
     }
 
     private void SlowEnemy(float percent) => agent.speed *= percent;
