@@ -13,6 +13,7 @@ public class ShowTurretInfo : MonoBehaviour
     [SerializeField] TextMeshProUGUI turretName;
     [SerializeField] Image turretImage;
     [SerializeField] TextMeshProUGUI turretDamage;
+    [SerializeField] TextMeshProUGUI turretDescription;
 
     public void ShowInfo(Turret turret)
     {
@@ -21,5 +22,6 @@ public class ShowTurretInfo : MonoBehaviour
         turretName.text = turret.turretName;
         turretDamage.text = turret.damage.ToString();
         turretImage.sprite = turret.turretImg;
+        turretDescription.text = turret.attackDescription;
     }
 }
