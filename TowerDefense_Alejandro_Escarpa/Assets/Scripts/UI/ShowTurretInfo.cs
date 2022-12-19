@@ -15,6 +15,8 @@ public class ShowTurretInfo : MonoBehaviour
     [SerializeField] TextMeshProUGUI turretDamage;
     [SerializeField] TextMeshProUGUI turretDescription;
 
+    [SerializeField] TextMeshProUGUI upgradeCostTxt;
+
     public void ShowInfo(Turret turret)
     {
         uiPanels.ChangePanel(turretInfoPanel);

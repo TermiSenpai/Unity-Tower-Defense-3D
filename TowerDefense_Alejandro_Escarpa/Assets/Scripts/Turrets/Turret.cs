@@ -27,6 +27,7 @@ public class Turret : ScriptableObject
 
     [Space]
     [Header("Upgrading")]
-    public GameObject nextLevel;
+    public int upgradeCost;
+    public Turret nextLevel;
 
 }

@@ -21,4 +21,5 @@ MonoBehaviour:
   bullet: {fileID: 1974867370617378, guid: 9331e4309bb59ce4db311583b0fa0791, type: 3}
   cost: 100
   prefab: {fileID: 8627922958414151668, guid: f190cbbb1d264884aa8756103cee8f00, type: 3}
-  nextLevel: {fileID: 0}
+  upgradeCost: 200
+  nextLevel: {fileID: 11400000, guid: ba85d6fb0f66089449f08798a4659e05, type: 2}
