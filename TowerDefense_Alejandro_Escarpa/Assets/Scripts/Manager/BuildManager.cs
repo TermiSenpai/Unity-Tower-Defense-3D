@@ -50,6 +50,7 @@ public class BuildManager : MonoBehaviour
     public void SelectGround(GroundSelector ground)
     {
         selectedGround = ground;
+        if (selectedGround.GetBuildedTurret() == null) return;
         turretInfo.ShowInfo(ground.GetBuildedTurret());
     }
 

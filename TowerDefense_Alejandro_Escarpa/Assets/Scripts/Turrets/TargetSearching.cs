@@ -58,10 +58,4 @@ public class TargetSearching : MonoBehaviour
     {
         return target;
     }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, stats.turret.range);
-    }
 }

@@ -17,14 +17,17 @@ public class EnemyWaveSpawner : MonoBehaviour
     [SerializeField] TextMeshProUGUI roundTxt;
     bool canSpawnEnemies = true;
 
+    private int enemiesInList = 0;
     private List<GameObject> posibleEnemies = new List<GameObject>();
 
 
     private void Start()
     {
+        round = 1;
         spawner = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>();
 
-        posibleEnemies.Add(enemies[0]);
+        posibleEnemies.Add(enemies[enemiesInList]);
+        enemiesInList++;
     }
 
     public void StartEnemyWave()
@@ -35,7 +38,7 @@ public class EnemyWaveSpawner : MonoBehaviour
 
 
     IEnumerator IEnemyWaveSpawner()
-    {        
+    {
         canSpawnEnemies = false;
         changeRoundTxt();
         Debug.Log("Wave Incoming!");
@@ -58,13 +61,14 @@ public class EnemyWaveSpawner : MonoBehaviour
         }
 
         canSpawnEnemies = true;
-        AddNewEnemyToList();
-        round++;
+        if (GetRound() % 2 == 0)
+            AddNewEnemyToList();
+        ChangeRound(1);
     }
 
     private void increaseAllEnemyHP()
     {
-        foreach(GameObject enemy in enemies)
+        foreach (GameObject enemy in enemies)
         {
             EnemyIncreaseHP enemiesHP = enemy.GetComponent<EnemyIncreaseHP>();
 
@@ -74,9 +78,10 @@ public class EnemyWaveSpawner : MonoBehaviour
 
     private void AddNewEnemyToList()
     {
-        if (round >= enemies.Length) return;
+        if (enemiesInList >= enemies.Length) return;
 
-        posibleEnemies.Add(enemies[round]);
+        posibleEnemies.Add(enemies[enemiesInList]);
+        enemiesInList++;
     }
 
     public int GetRound() { return round; }

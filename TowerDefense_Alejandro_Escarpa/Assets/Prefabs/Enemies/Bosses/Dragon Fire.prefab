@@ -1651,6 +1651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HPIncreasedPerRound: 10
+  multiplyHP: 2
 --- !u!114 &8176417873461193642
 MonoBehaviour:
   m_ObjectHideFlags: 0

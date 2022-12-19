@@ -25,4 +25,8 @@ public class Turret : ScriptableObject
     public int cost;
     public GameObject prefab;
 
+    [Space]
+    [Header("Upgrading")]
+    public GameObject nextLevel;
+
 }

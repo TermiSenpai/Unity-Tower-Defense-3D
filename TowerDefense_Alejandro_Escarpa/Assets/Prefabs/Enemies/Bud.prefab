@@ -387,6 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HPIncreasedPerRound: 1
+  multiplyHP: 1.35
 --- !u!114 &6526110217616328893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,7 +404,7 @@ MonoBehaviour:
   agent: {fileID: 628193342501471372}
   rb: {fileID: 2397476014790519630}
   destroyTime: 2
-  moneyToPlayer: 25
+  moneyToPlayer: 30
 --- !u!114 &-5370636156186799548
 MonoBehaviour:
   m_ObjectHideFlags: 0

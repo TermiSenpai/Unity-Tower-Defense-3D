@@ -286,7 +286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dc6dc440099a9842898bdf07b9a591b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HPIncreasedPerRound: 3
+  HPIncreasedPerRound: 2
+  multiplyHP: 1.35
 --- !u!114 &2748100711874155037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,7 +304,7 @@ MonoBehaviour:
   agent: {fileID: -5258505575862120671}
   rb: {fileID: -7041555734241198892}
   destroyTime: 2
-  moneyToPlayer: 35
+  moneyToPlayer: 30
 --- !u!114 &-6900258650143711338
 MonoBehaviour:
   m_ObjectHideFlags: 0

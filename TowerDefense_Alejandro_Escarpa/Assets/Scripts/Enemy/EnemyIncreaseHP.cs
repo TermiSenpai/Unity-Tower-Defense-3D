@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class EnemyIncreaseHP : MonoBehaviour
 {
-    public int HPIncreasedPerRound = 1;
+    public float HPIncreasedPerRound = 1;
+    public float multiplyHP;
 
     public void IncreaseHP()
     {
-        HPIncreasedPerRound *= 2;
+        HPIncreasedPerRound *= multiplyHP;
     }
 
-    public int GetIncreasedHP()
+    public float GetIncreasedHP()
     {
         return HPIncreasedPerRound;
     }

@@ -9,7 +9,7 @@ public class GroundSelector : MonoBehaviour
 {
     [SerializeField] private Color hoverColor;
     [SerializeField] private Turret turret;
-    
+
     public Color starterColor;
     private Renderer rend;
 
@@ -18,7 +18,7 @@ public class GroundSelector : MonoBehaviour
 
     private void Start()
     {
-       
+
         rend = GetComponent<Renderer>();
         starterColor = rend.material.color;
         buildManager = BuildManager.instance;
@@ -41,8 +41,8 @@ public class GroundSelector : MonoBehaviour
             return;
         }
 
-
-        buildManager.BuildTurretOn(this);
+        if (buildManager.CanBuild)
+            buildManager.BuildTurretOn(this);
     }
 
     private void OnMouseEnter()
