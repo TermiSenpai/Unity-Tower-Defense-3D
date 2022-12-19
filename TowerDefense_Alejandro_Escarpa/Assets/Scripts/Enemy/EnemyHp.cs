@@ -5,15 +5,14 @@ using UnityEngine;
 public class EnemyHp : MonoBehaviour
 {
     [SerializeField] EnemyDead enemyDead;
-    public int EnemyHP = 30;
-    [SerializeField] private int hpIncreasePerRound = 1;
-
+    [SerializeField] EnemyIncreaseHP increasedHPPerRound;
     private EnemyWaveSpawner wave;
+    public int EnemyHP = 30;
+
     private void Start()
     {
         wave = FindObjectOfType<EnemyWaveSpawner>();
-        if (wave.GetRound() > 1)
-            EnemyHP = EnemyHP + (wave.GetRound() * hpIncreasePerRound);
+        EnemyHP += (wave.GetRound() * increasedHPPerRound.GetIncreasedHP());
     }
 
     public void Dmg(int DMGcount)

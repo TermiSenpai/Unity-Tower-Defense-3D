@@ -17,11 +17,14 @@ public class EnemyWaveSpawner : MonoBehaviour
     [SerializeField] TextMeshProUGUI roundTxt;
     bool canSpawnEnemies = true;
 
+    private List<GameObject> posibleEnemies = new List<GameObject>();
+
 
     private void Start()
     {
         spawner = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>();
-        
+
+        posibleEnemies.Add(enemies[0]);
     }
 
     public void StartEnemyWave()
@@ -32,7 +35,7 @@ public class EnemyWaveSpawner : MonoBehaviour
 
 
     IEnumerator IEnemyWaveSpawner()
-    {
+    {        
         canSpawnEnemies = false;
         changeRoundTxt();
         Debug.Log("Wave Incoming!");
@@ -40,7 +43,7 @@ public class EnemyWaveSpawner : MonoBehaviour
 
         for (int i = 0; i < round + 1; i++)
         {
-            Instantiate(enemies[Random.Range(0, enemies.Length)], spawner.position, Quaternion.identity, parent);
+            Instantiate(posibleEnemies[Random.Range(0, posibleEnemies.Count)], spawner.position, Quaternion.identity, parent);
             yield return new WaitForSeconds(timeBetweenEnemies);
 
         }
@@ -48,10 +51,32 @@ public class EnemyWaveSpawner : MonoBehaviour
         yield return new WaitForSeconds(timeBetweenEnemies * 2f);
 
         if (round % 10 == 0)
-            Instantiate(bosses[Random.Range(0,bosses.Length)], spawner.position, Quaternion.identity, parent);
+        {
+            Instantiate(bosses[Random.Range(0, bosses.Length)], spawner.position, Quaternion.identity, parent);
+
+            increaseAllEnemyHP();
+        }
 
         canSpawnEnemies = true;
+        AddNewEnemyToList();
         round++;
+    }
+
+    private void increaseAllEnemyHP()
+    {
+        foreach(GameObject enemy in enemies)
+        {
+            EnemyIncreaseHP enemiesHP = enemy.GetComponent<EnemyIncreaseHP>();
+
+            enemiesHP.IncreaseHP();
+        }
+    }
+
+    private void AddNewEnemyToList()
+    {
+        if (round >= enemies.Length) return;
+
+        posibleEnemies.Add(enemies[round]);
     }
 
     public int GetRound() { return round; }

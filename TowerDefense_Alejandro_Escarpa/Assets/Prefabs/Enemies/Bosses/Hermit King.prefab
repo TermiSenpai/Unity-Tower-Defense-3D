@@ -1431,6 +1431,7 @@ GameObject:
   - component: {fileID: 399051649557693847}
   - component: {fileID: 8568279045751905705}
   - component: {fileID: 923289989436247615}
+  - component: {fileID: 3465838507407331981}
   - component: {fileID: -8352429126386781297}
   - component: {fileID: 5456122880121751290}
   - component: {fileID: -2393535684769541217}
@@ -1534,8 +1535,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDead: {fileID: 8568279045751905705}
+  increasedHPPerRound: {fileID: 3465838507407331981}
   EnemyHP: 50
-  hpIncreasePerRound: 10
+--- !u!114 &3465838507407331981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399051649550317143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc6dc440099a9842898bdf07b9a591b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HPIncreasedPerRound: 10
 --- !u!114 &-8352429126386781297
 MonoBehaviour:
   m_ObjectHideFlags: 0

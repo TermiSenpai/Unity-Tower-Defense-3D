@@ -11363,12 +11363,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 3978125356112204730, guid: f1a95bd41bac542488d0aa28a882fc00, type: 3}
-  - {fileID: 655202435488149648, guid: bbf7d6528d3050941baec581905095ca, type: 3}
   - {fileID: 5509129847841610287, guid: f0b1b6a1816bdca488f3eed5724d5c50, type: 3}
-  - {fileID: 6915221143753491316, guid: bcb23879658ac81439f565d5d512be70, type: 3}
-  - {fileID: 4128923077921600140, guid: 9c3829141a82bba43983740fa84d839b, type: 3}
   - {fileID: 2610392148634255810, guid: 2a812d3c6d8ec704388f38f586c23c33, type: 3}
+  - {fileID: 3978125356112204730, guid: f1a95bd41bac542488d0aa28a882fc00, type: 3}
+  - {fileID: 6915221143753491316, guid: bcb23879658ac81439f565d5d512be70, type: 3}
+  - {fileID: 655202435488149648, guid: bbf7d6528d3050941baec581905095ca, type: 3}
+  - {fileID: 4128923077921600140, guid: 9c3829141a82bba43983740fa84d839b, type: 3}
   bosses:
   - {fileID: 8747707380417040920, guid: 6fb8e0a9593d6d742bc3ca8579fe9471, type: 3}
   - {fileID: 399051649550317143, guid: 11e75b544c7215642b52ea5424f0b79e, type: 3}
@@ -11377,7 +11377,6 @@ MonoBehaviour:
   parent: {fileID: 440007803}
   timeBeforeSpawn: 3
   timeBetweenEnemies: 1
-  round: 1
   roundTxt: {fileID: 580455457}
 --- !u!4 &1734884832
 Transform:
