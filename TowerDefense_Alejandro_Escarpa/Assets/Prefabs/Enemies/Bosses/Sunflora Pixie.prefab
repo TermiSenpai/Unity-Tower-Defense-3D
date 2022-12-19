@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyDead: {fileID: 5357781088910380779}
   EnemyHP: 50
-  hpIncreasePerRound: 1
+  hpIncreasePerRound: 10
 --- !u!114 &5357781088910380779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,7 +129,7 @@ MonoBehaviour:
   agent: {fileID: 2539699440632560592}
   rb: {fileID: 1361741115105474454}
   destroyTime: 2
-  moneyToPlayer: 1000
+  moneyToPlayer: 150
 --- !u!195 &2539699440632560592
 NavMeshAgent:
   m_ObjectHideFlags: 0

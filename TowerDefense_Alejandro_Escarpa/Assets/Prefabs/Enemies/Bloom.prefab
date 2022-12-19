@@ -1042,13 +1042,13 @@ GameObject:
   m_Component:
   - component: {fileID: 3978125356112367514}
   - component: {fileID: 9054188261408684728}
+  - component: {fileID: 5317603972188911975}
+  - component: {fileID: 5367352002872435958}
+  - component: {fileID: -1547232155951658539}
   - component: {fileID: 1603627183491770513}
   - component: {fileID: 8185730107035891960}
   - component: {fileID: 6082935969582177069}
-  - component: {fileID: 5317603972188911975}
-  - component: {fileID: 5367352002872435958}
   - component: {fileID: 9063132955212280747}
-  - component: {fileID: -1547232155951658539}
   m_Layer: 0
   m_Name: Bloom
   m_TagString: Enemy
@@ -1111,6 +1111,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203bbaf2600b2af42a10be9ea570ca36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5317603972188911975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3978125356112204730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6d63bc97dbdbd4cbb197d5c4dacdfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyDead: {fileID: 5367352002872435958}
+  EnemyHP: 10
+  hpIncreasePerRound: 1
+--- !u!114 &5367352002872435958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3978125356112204730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d87781aeb354a1a42b1d3a292c9e28a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 8185730107035891960}
+  agent: {fileID: 1603627183491770513}
+  rb: {fileID: 9063132955212280747}
+  destroyTime: 2
+  moneyToPlayer: 35
+--- !u!114 &-1547232155951658539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3978125356112204730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986cbade2f7a0e744849f6224b1a38dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!195 &1603627183491770513
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1123,7 +1168,7 @@ NavMeshAgent:
   m_Radius: 0.5
   m_Speed: 3.5
   m_Acceleration: 8
-  avoidancePriority: 50
+  avoidancePriority: 35
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
@@ -1166,38 +1211,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.397965, z: 1}
   m_Center: {x: 0, y: 0.7003145, z: 0}
---- !u!114 &5317603972188911975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3978125356112204730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b6d63bc97dbdbd4cbb197d5c4dacdfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyDead: {fileID: 5367352002872435958}
-  EnemyHP: 10
-  hpIncreasePerRound: 1
---- !u!114 &5367352002872435958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3978125356112204730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d87781aeb354a1a42b1d3a292c9e28a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 8185730107035891960}
-  agent: {fileID: 1603627183491770513}
-  rb: {fileID: 9063132955212280747}
-  destroyTime: 2
-  moneyToPlayer: 100
 --- !u!54 &9063132955212280747
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1214,19 +1227,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-1547232155951658539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3978125356112204730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986cbade2f7a0e744849f6224b1a38dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
 --- !u!1 &3978125356112204736
 GameObject:
   m_ObjectHideFlags: 0
