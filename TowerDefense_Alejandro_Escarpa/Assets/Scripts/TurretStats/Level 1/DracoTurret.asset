@@ -17,7 +17,10 @@ MonoBehaviour:
   damage: 7
   range: 6
   fireRate: 0.75
-  attackDescription: Shooting enemy!
+  attackDescription: Fire attack!
   bullet: {fileID: 2989649144817240051, guid: 3f6dd38832f16804ea56f95a4c881535, type: 3}
   cost: 400
   prefab: {fileID: 1899257949373414277, guid: 84209bc16b769c2498b208f275c7f1ac, type: 3}
+  upgradeCost: 800
+  sellValue: 200
+  nextLevel: {fileID: 11400000, guid: 3a31627a32d237048bc938a85d0fd010, type: 2}

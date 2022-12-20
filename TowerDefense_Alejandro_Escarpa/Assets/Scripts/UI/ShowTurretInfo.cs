@@ -8,6 +8,7 @@ public class ShowTurretInfo : MonoBehaviour
 {
     [SerializeField] UIPanelsManager uiPanels;
     [SerializeField] GameObject turretInfoPanel;
+    [SerializeField] GameObject upgradeBtn;
 
     [Header("Turret Info")]
     [SerializeField] TextMeshProUGUI turretName;
@@ -15,7 +16,10 @@ public class ShowTurretInfo : MonoBehaviour
     [SerializeField] TextMeshProUGUI turretDamage;
     [SerializeField] TextMeshProUGUI turretDescription;
 
+    [Space, Header("Currency info")]
     [SerializeField] TextMeshProUGUI upgradeCostTxt;
+    [SerializeField] TextMeshProUGUI sellValueTxt;
+
 
     public void ShowInfo(Turret turret)
     {
@@ -25,5 +29,18 @@ public class ShowTurretInfo : MonoBehaviour
         turretDamage.text = turret.damage.ToString();
         turretImage.sprite = turret.turretImg;
         turretDescription.text = turret.attackDescription;
+
+        if (turret.nextLevel == null)
+        {
+            upgradeBtn.SetActive(false);
+            upgradeCostTxt.text = string.Empty;
+        }
+        else
+        {
+            upgradeBtn.SetActive(true);
+            upgradeCostTxt.text = $"Upgrade cost: ${turret.upgradeCost}";
+        }
+
+        sellValueTxt.text = $"Sell ${turret.sellValue}";
     }
 }

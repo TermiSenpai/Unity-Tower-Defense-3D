@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
+  m_Name: SandClockTurret_2
+  m_EditorClassIdentifier: 
+  turretName: 
+  turretImg: {fileID: 21300000, guid: 896323e07d2c33740b171b518a774e7b, type: 3}
+  damage: 0
+  range: 7
+  fireRate: 1
+  attackDescription: Slow enemies!
+  bullet: {fileID: 0}
+  cost: 0
+  prefab: {fileID: 4833676515973474496, guid: 0b3f433f9d627064a88ee26274ed7c88, type: 3}
+  upgradeCost: 0
+  sellValue: 0
+  nextLevel: {fileID: 0}

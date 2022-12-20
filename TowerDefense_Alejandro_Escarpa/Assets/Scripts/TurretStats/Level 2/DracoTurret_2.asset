@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
-  m_Name: BatTurret_2
+  m_Name: DracoTurret_2
   m_EditorClassIdentifier: 
-  turretName: Crossbow
-  turretImg: {fileID: 21300000, guid: 56f4b50e6686c98408b3fc3032581518, type: 3}
+  turretName: 
+  turretImg: {fileID: 21300000, guid: 4bb84193da3e3f54c96a0823a8f1eeca, type: 3}
   damage: 8
   range: 7
-  fireRate: 1.1
-  attackDescription: Shooting enemies!
-  bullet: {fileID: 1770985748105208, guid: 35c60c8f8b692474ca84cfe0dea874c4, type: 3}
-  cost: 200
-  prefab: {fileID: 8128422380594348077, guid: 2623a0f3d7bfa0a4e83f32f3b0b457fa, type: 3}
-  upgradeCost: 500
-  sellValue: 150
+  fireRate: 0.85
+  attackDescription: Fire attack!
+  bullet: {fileID: 0}
+  cost: 0
+  prefab: {fileID: 1707823044582181517, guid: f5878bb6c875fe944a94dccf4c4e1a70, type: 3}
+  upgradeCost: 1200
+  sellValue: 600
   nextLevel: {fileID: 0}

@@ -28,6 +28,7 @@ public class Turret : ScriptableObject
     [Space]
     [Header("Upgrading")]
     public int upgradeCost;
+    public int sellValue;
     public Turret nextLevel;
 
 }
