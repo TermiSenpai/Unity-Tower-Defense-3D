@@ -9,6 +9,7 @@ public class UpgradeManager : MonoBehaviour
 
     GroundSelector selectedGround;
     Turret selectedTurret;
+    BuildManager buildManager;
 
     private void Awake()
     {
@@ -19,7 +20,12 @@ public class UpgradeManager : MonoBehaviour
         instance = this;
     }
 
-    public void updateTurret(Turret newTurret)
+    private void Start()
+    {
+        buildManager = BuildManager.instance;
+    }
+
+    public void UpdateSelectedTurret(Turret newTurret)
     {
         selectedTurret = newTurret;
     }
@@ -32,23 +38,45 @@ public class UpgradeManager : MonoBehaviour
 
     public void UpdateReferences(GroundSelector newGround, Turret newTurret)
     {
-        updateTurret(newTurret);
+        UpdateSelectedTurret(newTurret);
         UpdateGround(newGround);
     }
 
     public void UpgradeTurret()
     {
-        selectedGround.destroyCurrentTurret();
-        BuildManager.instance.SetTurretToBuild(selectedTurret);
-        BuildManager.instance.BuildTurretOn(selectedGround);
-        selectedGround.SetBuildedTurret(selectedTurret);
-        BuildManager.instance.SetTurretToBuild(null);
+        // destroy turret, upgrade the turret
+
+        if (!checkUpgradeMoney())
+            return;
+
+        DestroyTurret();
+        buildManager.SetTurretToBuild(selectedTurret.nextLevel);
+        buildManager.BuildTurretOn(selectedGround);
+        selectedGround.SetBuildedTurret(selectedTurret.nextLevel);
+        buildManager.SetTurretToBuild(null);
+        buildManager.ShowInfo(selectedGround);
     }
 
     public void SellTurret()
     {
+        // give turret sell money, destroy the turret
         Currency.Money += selectedGround.GetBuildedTurret().sellValue;
         uiPanel.ClosePanel();
+        DestroyTurret();
+    }
+
+    private void DestroyTurret()
+    {
         selectedGround.destroyCurrentTurret();
+    }
+
+
+    private bool checkUpgradeMoney()
+    {
+        if (Currency.Money < selectedTurret.upgradeCost)
+            return false;
+
+
+        return true;
     }
 }

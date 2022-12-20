@@ -35,15 +35,21 @@ public class BuildManager : MonoBehaviour
 
     public void BuildTurretOn(GroundSelector ground)
     {
+
+        ground.buildedTurret = Instantiate(turretToBuild.prefab, ground.GetBuildPos(), Quaternion.identity, turretParent);
+        ground.SetBuildedTurret(turretToBuild);
+    }
+
+    public bool checkMoney()
+    {
         if (Currency.Money < turretToBuild.cost)
         {
             Debug.Log("Not enought money to build");
             turretToBuild = null;
-            return;
+            return false;
         }
         Currency.Money -= turretToBuild.cost;
-        ground.buildedTurret = Instantiate(turretToBuild.prefab, ground.GetBuildPos(), Quaternion.identity, turretParent);
-        ground.SetBuildedTurret(turretToBuild);
+        return true;
     }
 
 
@@ -51,9 +57,10 @@ public class BuildManager : MonoBehaviour
     {
         selectedGround = ground;
         if (selectedGround.GetBuildedTurret() == null) return;
-        turretInfo.ShowInfo(ground.GetBuildedTurret());
+        ShowInfo(ground);
 
-        UpgradeManager.instance.UpdateReferences(ground, ground.GetBuildedTurret().nextLevel);
+        UpgradeManager.instance.UpdateReferences(ground, ground.GetBuildedTurret());
+
     }
 
 
@@ -66,13 +73,13 @@ public class BuildManager : MonoBehaviour
             turretToBuild = null;
             return;
         }
-        if (Currency.Money < turret.cost)
-        {
-            Debug.Log("Not enought money to buy");
-            return;
-        }
         turretToBuild = turret;
-
     }
+
+    public void ShowInfo(GroundSelector ground)
+    {
+        turretInfo.ShowInfo(ground.GetBuildedTurret());
+    }
+
 
 }

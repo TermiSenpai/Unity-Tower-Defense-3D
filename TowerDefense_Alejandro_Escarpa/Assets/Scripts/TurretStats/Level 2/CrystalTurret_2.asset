@@ -20,7 +20,7 @@ MonoBehaviour:
   attackDescription: Magic attacks!
   bullet: {fileID: 5539249148279750864, guid: 26128d0e3f51dd14981b0050c228a871, type: 3}
   cost: 0
-  prefab: {fileID: 5854240091063869981, guid: 5d030934379b25740b50470d2f1edf69, type: 3}
-  upgradeCost: 0
-  sellValue: 0
+  prefab: {fileID: 6609793851367330670, guid: fc64e83973036c349b41c99e5b9287ab, type: 3}
+  upgradeCost: 400
+  sellValue: 300
   nextLevel: {fileID: 0}

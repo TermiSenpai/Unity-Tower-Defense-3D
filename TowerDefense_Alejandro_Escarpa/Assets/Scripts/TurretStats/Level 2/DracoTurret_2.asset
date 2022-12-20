@@ -18,7 +18,7 @@ MonoBehaviour:
   range: 7
   fireRate: 0.85
   attackDescription: Fire attack!
-  bullet: {fileID: 0}
+  bullet: {fileID: 1826106864716236, guid: b32baf366df21c34ea6a5528aade4274, type: 3}
   cost: 0
   prefab: {fileID: 1707823044582181517, guid: f5878bb6c875fe944a94dccf4c4e1a70, type: 3}
   upgradeCost: 1200
