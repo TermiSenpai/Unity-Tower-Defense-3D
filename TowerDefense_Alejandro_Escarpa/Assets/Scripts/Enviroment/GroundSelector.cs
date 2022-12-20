@@ -9,6 +9,7 @@ public class GroundSelector : MonoBehaviour
 {
     [SerializeField] private Color hoverColor;
     [SerializeField] private Turret turret;
+    public GameObject buildedTurret;
 
     public Color starterColor;
     private Renderer rend;
@@ -76,5 +77,11 @@ public class GroundSelector : MonoBehaviour
     public Turret GetBuildedTurret()
     {
         return turret;
+    }
+
+    public void destroyCurrentTurret()
+    {
+        Destroy(buildedTurret);
+        turret= null;
     }
 }
