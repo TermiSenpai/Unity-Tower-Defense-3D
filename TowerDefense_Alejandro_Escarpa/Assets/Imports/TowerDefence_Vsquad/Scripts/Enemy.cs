@@ -98,7 +98,7 @@ public class Enemy : MonoBehaviour {
 
         // DEATH
 
-        if (Enemy_Hp.EnemyHP <= 0)
+        if (Enemy_Hp.startHealth <= 0)
         {
             Speed = 0;
             Destroy(gameObject, 5f);

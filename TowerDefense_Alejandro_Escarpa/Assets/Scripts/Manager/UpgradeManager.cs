@@ -44,11 +44,12 @@ public class UpgradeManager : MonoBehaviour
 
     public void UpgradeTurret()
     {
-        // destroy turret, upgrade the turret
+        // destroy turret, upgrade the turret, 
 
         if (!checkUpgradeMoney())
             return;
 
+        Currency.Money -= selectedTurret.upgradeCost;
         DestroyTurret();
         buildManager.SetTurretToBuild(selectedTurret.nextLevel);
         buildManager.BuildTurretOn(selectedGround);
@@ -75,8 +76,7 @@ public class UpgradeManager : MonoBehaviour
     {
         if (Currency.Money < selectedTurret.upgradeCost)
             return false;
-
-
+                
         return true;
     }
 }

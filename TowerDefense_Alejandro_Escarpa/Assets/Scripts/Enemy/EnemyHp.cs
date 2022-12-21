@@ -6,23 +6,31 @@ public class EnemyHp : MonoBehaviour
 {
     [SerializeField] EnemyDead enemyDead;
     [SerializeField] EnemyIncreaseHP increasedHPPerRound;
+    private EnemyHealthBar healthBar;
     private EnemyWaveSpawner wave;
-    public float EnemyHP = 30;
+    public float startHealth = 5;
+    private float health;
     bool isDead = false;
 
     private void Start()
     {
-        wave = FindObjectOfType<EnemyWaveSpawner>();
+        healthBar = GetComponent<EnemyHealthBar>();
+        wave = FindObjectOfType<EnemyWaveSpawner>();        
+
         if (wave.GetRound() > 1)
-            EnemyHP += (wave.GetRound() * increasedHPPerRound.GetIncreasedHP());
+            startHealth += (wave.GetRound() * increasedHPPerRound.GetIncreasedHP());
+
+        health = startHealth;
     }
 
     public void Dmg(int DMGcount)
     {
-        EnemyHP -= DMGcount;
+        health -= DMGcount;
         enemyDead.EnemyHitted();
 
-        if (EnemyHP <= 0 && !isDead)
+        healthBar.OnTakeDamage(health / startHealth);
+
+        if (health <= 0 && !isDead)
         {
             isDead = true;
             enemyDead.EnemyKilled();
