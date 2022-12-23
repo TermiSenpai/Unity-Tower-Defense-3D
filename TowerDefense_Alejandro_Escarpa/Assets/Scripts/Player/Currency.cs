@@ -13,19 +13,27 @@ public class Currency : MonoBehaviour
     {
         moneyToUI = MoneyToUI.instance;
         Money = startMoney;
-        lastAmountOfMoney = Money;
-        moneyToUI.SetMoneyToUI(Money.ToString());
+        StartCoroutine(IUpdateMoneyToUI());
     }
 
     private void Update()
     {
-        if (Money != lastAmountOfMoney)
-        {
-            moneyToUI.SetMoneyToUI(Money.ToString());
-            lastAmountOfMoney = Money;
-        }
+        
 
         if (Money <= 0)
             Money = 0;
+    }
+
+    private IEnumerator IUpdateMoneyToUI()
+    {
+        while (true)
+        {
+            if (Money != lastAmountOfMoney)
+            {
+                moneyToUI.SetMoneyToUI(Money.ToString());
+                lastAmountOfMoney = Money;
+            }
+            yield return null;
+        }
     }
 }
