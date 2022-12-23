@@ -12,6 +12,7 @@ public class EnemyDead : MonoBehaviour
     [SerializeField] Rigidbody rb;
     [SerializeField] float destroyTime = 2;
     [SerializeField] int moneyToPlayer;
+    [SerializeField] GameObject particleDead;
     public void EnemyHitted()
     {
         anim.SetTrigger("Damaged");
@@ -27,6 +28,7 @@ public class EnemyDead : MonoBehaviour
             transform.position = newpos;
         }
 
+        particleDead.SetActive(true);
         Currency.Money += moneyToPlayer;
         rb.isKinematic = true;
         gameObject.tag = "Dead"; // send it to TowerTrigger to stop the shooting

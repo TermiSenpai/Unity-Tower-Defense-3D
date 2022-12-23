@@ -1099,6 +1099,7 @@ Transform:
   - {fileID: 3978125356112367118}
   - {fileID: 3978125356112367106}
   - {fileID: 2665175475697344988}
+  - {fileID: 819453991519475804}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1160,6 +1161,7 @@ MonoBehaviour:
   rb: {fileID: 9063132955212280747}
   destroyTime: 2
   moneyToPlayer: 35
+  particleDead: {fileID: 819453991519475805}
 --- !u!114 &-1547232155951658539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2270,6 +2272,73 @@ Transform:
   m_Father: {fileID: 3978125356112367578}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -6.150185, y: -4.3906717, z: -5.4527717}
+--- !u!1001 &6363155042150263840
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3978125356112367514}
+    m_Modifications:
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995773, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_Name
+      value: EnemyDead
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+--- !u!4 &819453991519475804 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+  m_PrefabInstance: {fileID: 6363155042150263840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &819453991519475805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5985634496115995773, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+  m_PrefabInstance: {fileID: 6363155042150263840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7215697937236471327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2277,10 +2346,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3978125356112367514}
     m_Modifications:
-    - target: {fileID: 753129993142527335, guid: b9e917e669b4e334fa71dcdd464a996e, type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4674690175043522499, guid: b9e917e669b4e334fa71dcdd464a996e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

@@ -77,6 +77,7 @@ Transform:
   - {fileID: 655202435487919472}
   - {fileID: 655202435487919474}
   - {fileID: 3148877841070837705}
+  - {fileID: 8247047405265197107}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -138,6 +139,7 @@ MonoBehaviour:
   rb: {fileID: 6885967888526883740}
   destroyTime: 2
   moneyToPlayer: 50
+  particleDead: {fileID: 8247047405265197106}
 --- !u!114 &851682670298453719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2854,6 +2856,73 @@ Transform:
   m_Father: {fileID: 655202435487919280}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2405585446860155983
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 655202435487919280}
+    m_Modifications:
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985634496115995773, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+      propertyPath: m_Name
+      value: EnemyDead
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+--- !u!1 &8247047405265197106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5985634496115995773, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+  m_PrefabInstance: {fileID: 2405585446860155983}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8247047405265197107 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5985634496115995772, guid: db50f98d8e18fb34cb12250ba840b9ba, type: 3}
+  m_PrefabInstance: {fileID: 2405585446860155983}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7740801848631230474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2861,10 +2930,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 655202435487919280}
     m_Modifications:
-    - target: {fileID: 753129993142527335, guid: b9e917e669b4e334fa71dcdd464a996e, type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4674690175043522499, guid: b9e917e669b4e334fa71dcdd464a996e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
