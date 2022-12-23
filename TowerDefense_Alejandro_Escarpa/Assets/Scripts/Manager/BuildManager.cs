@@ -11,6 +11,7 @@ public class BuildManager : MonoBehaviour
     private GroundSelector selectedGround;
     [SerializeField] ShowTurretInfo turretInfo;
     public GameObject buildedTurret;
+    public GameObject BuildEffect;
 
     private void Awake()
     {
@@ -35,6 +36,8 @@ public class BuildManager : MonoBehaviour
 
     public void BuildTurretOn(GroundSelector ground)
     {
+        GameObject turretEffect = Instantiate(BuildEffect, ground.GetBuildPos(), Quaternion.identity);
+        Destroy(turretEffect, 5);
 
         ground.buildedTurret = Instantiate(turretToBuild.prefab, ground.GetBuildPos(), Quaternion.identity, turretParent);
         ground.SetBuildedTurret(turretToBuild);
