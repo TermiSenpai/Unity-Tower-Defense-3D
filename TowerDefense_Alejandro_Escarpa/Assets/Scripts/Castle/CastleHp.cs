@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class CastleHp : MonoBehaviour
 {
-    [SerializeField] private int health;
+    [SerializeField] private float startHealth;
+    [SerializeField] private float health;
     [SerializeField] private bool isDead = false;
+    [SerializeField] EnemyHealthBar healthbar;
+
+    private void Start()
+    {
+        health = startHealth;
+    }
 
     public void HitCastle(int damage)
     {
         health -= damage;
         CheckHealth();
+        healthbar.OnTakeDamage(health / startHealth);
     }
 
     private void CheckHealth()
