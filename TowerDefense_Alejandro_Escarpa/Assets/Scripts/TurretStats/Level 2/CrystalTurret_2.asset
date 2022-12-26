@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretName: Crystal
   turretImg: {fileID: 21300000, guid: 882f692a0293b6d47a5e8afed9eaae2b, type: 3}
-  damage: 8
+  damage: 7
   range: 7
   fireRate: 1
   attackDescription: Magic attacks!
