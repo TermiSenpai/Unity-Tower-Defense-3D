@@ -6,12 +6,14 @@ public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
 
-    [SerializeField] private Turret turretToBuild;
+    private Turret turretToBuild;
     [SerializeField] private Transform turretParent;
     private GroundSelector selectedGround;
     [SerializeField] ShowTurretInfo turretInfo;
+    [HideInInspector]
     public GameObject buildedTurret;
     public GameObject BuildEffect;
+    [SerializeField] private BuildModeManager buildUI;
 
     private void Awake()
     {
@@ -29,11 +31,14 @@ public class BuildManager : MonoBehaviour
         // test
         if (CanBuild)
             if (Input.GetMouseButtonDown(1))
+            {
                 turretToBuild = null;
+                buildUI.ToggleBuildUI(false);
+            }
 
     }
 
-
+    // Select the ground and build a turret on it
     public void BuildTurretOn(GroundSelector ground)
     {
         GameObject turretEffect = Instantiate(BuildEffect, ground.GetBuildPos(), Quaternion.identity);
@@ -49,6 +54,7 @@ public class BuildManager : MonoBehaviour
         {
             Debug.Log("Not enought money to build");
             turretToBuild = null;
+            buildUI.ToggleBuildUI(false);
             return false;
         }
         Currency.Money -= turretToBuild.cost;
@@ -77,6 +83,7 @@ public class BuildManager : MonoBehaviour
             return;
         }
         turretToBuild = turret;
+        buildUI.BuildUI(turretToBuild.turretImg);
     }
 
     public void ShowInfo(GroundSelector ground)
