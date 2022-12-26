@@ -18,9 +18,6 @@ public class CameraMovement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-            canMove = !canMove;
-
         if (!canMove)
             return;
 
