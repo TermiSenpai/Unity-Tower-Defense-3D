@@ -2533,7 +2533,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -2580,11 +2580,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac0b81d14264fb44a2954c9e7884205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panSpeed: 30
-  multiplier: 50
-  scrollSpeed: 50
-  minY: 10
-  maxY: 60
+  movementSpeed: 10
+  fastMovementSpeed: 100
+  freeLookSensitivity: 3
+  zoomSensitivity: 10
+  fastZoomSensitivity: 50
 --- !u!1 &252098889
 GameObject:
   m_ObjectHideFlags: 0
