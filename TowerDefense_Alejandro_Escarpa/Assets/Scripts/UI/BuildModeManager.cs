@@ -1,34 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BuildModeManager : MonoBehaviour
 {
     BuildManager buildManager;
     [SerializeField] GameObject buildsystem;
-
+    [SerializeField] Image turretImage;
+    
 
     private void Start()
     {
         buildManager = BuildManager.instance;
-        StartCoroutine(IBuildUIUpdate());
     }
 
-    private IEnumerator IBuildUIUpdate()
+    public void BuildUI(Sprite image)
     {
-        while (true)
-        {
-            switch (buildManager.CanBuild)
-            {
-                case true:
-                    buildsystem.SetActive(true);
-                    break;
-                case false:
-                    buildsystem.SetActive(false);
-                    break;
-            }
+        ToggleBuildUI(true);
+        turretImage.sprite = image;
+    }
 
-            yield return new WaitForSeconds(0.2f);
-        }
+    public void ToggleBuildUI(bool value)
+    {
+        buildsystem.SetActive(value);
     }
 }
