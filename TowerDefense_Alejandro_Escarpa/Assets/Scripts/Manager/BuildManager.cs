@@ -33,9 +33,14 @@ public class BuildManager : MonoBehaviour
             if (Input.GetMouseButtonDown(1))
             {
                 turretToBuild = null;
-                buildUI.ToggleBuildUI(false);
+                CancelBuildUI();                
             }
 
+    }
+
+    public void CancelBuildUI()
+    {
+        buildUI.ToggleBuildUI(false);
     }
 
     // Select the ground and build a turret on it
