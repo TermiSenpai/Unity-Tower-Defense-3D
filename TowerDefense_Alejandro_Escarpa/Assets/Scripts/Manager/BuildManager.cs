@@ -46,6 +46,7 @@ public class BuildManager : MonoBehaviour
 
         ground.buildedTurret = Instantiate(turretToBuild.prefab, ground.GetBuildPos(), Quaternion.identity, turretParent);
         ground.SetBuildedTurret(turretToBuild);
+        FxSoundsManager.instance.PlayDefaultBuildClip();
     }
 
     public bool checkMoney()
