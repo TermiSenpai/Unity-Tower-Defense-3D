@@ -4870,6 +4870,7 @@ GameObject:
   - component: {fileID: 3548662951301733723}
   - component: {fileID: 1877247150350113237}
   - component: {fileID: 1885071023797698769}
+  - component: {fileID: -7112839219137280820}
   m_Layer: 0
   m_Name: Draco_1
   m_TagString: Untagged
@@ -4996,3 +4997,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899257949373414277}
   m_Mesh: {fileID: 4300000, guid: be5e08e445535d94e8c403d6fc594a31, type: 3}
+--- !u!114 &-7112839219137280820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899257949373414277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98db51de02f8b10409e9df6d448843c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

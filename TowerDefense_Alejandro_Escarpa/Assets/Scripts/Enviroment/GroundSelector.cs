@@ -15,6 +15,7 @@ public class GroundSelector : MonoBehaviour
     private Renderer rend;
 
     private BuildManager buildManager;
+    private ShowRangeInBuildMode showRange;
 
 
     private void Start()
@@ -23,6 +24,7 @@ public class GroundSelector : MonoBehaviour
         rend = GetComponent<Renderer>();
         starterColor = rend.material.color;
         buildManager = BuildManager.instance;
+        showRange = ShowRangeInBuildMode.instance;
     }
 
 
@@ -54,6 +56,8 @@ public class GroundSelector : MonoBehaviour
         if (EventSystem.current.IsPointerOverGameObject()) return;
         if (!buildManager.CanBuild) return;
 
+        showRange.showSphere();
+        showRange.SphereToGroundPos(this);
         SetBlockColor(hoverColor);
     }
 

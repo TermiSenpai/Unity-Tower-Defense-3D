@@ -46,9 +46,6 @@ public class TargetSearching : MonoBehaviour
         }
     }
 
-
-
-
     public bool HaveTarget()
     {
         return target != null;
