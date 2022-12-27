@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class EnemyHealthBar : MonoBehaviour
 {
-    public Image healthBar;
+    public Image healthBar;    
 
     public void OnTakeDamage(float amount)
     {
         healthBar.fillAmount = amount;
     }
+
 }
