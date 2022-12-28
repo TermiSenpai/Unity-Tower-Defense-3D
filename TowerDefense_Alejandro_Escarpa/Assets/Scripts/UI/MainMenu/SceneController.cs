@@ -10,14 +10,14 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    public void LengthSelect(float value)
-    {
-        PlayerPrefs.SetFloat("LengthMultiplier", value);
-    }
-
     public void ExitGame()
     {
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
         Application.Quit();
+
     }
 
 }
