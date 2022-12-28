@@ -15,11 +15,11 @@ public class EnemyWaveSpawner : MonoBehaviour
     [SerializeField] float timeBetweenEnemies;
     [SerializeField] int round;
     [SerializeField] TextMeshProUGUI roundTxt;
+    [SerializeField] private int extraEnemies;
     bool canSpawnEnemies = true;
 
     private int enemiesInList = 0;
     private List<GameObject> posibleEnemies = new List<GameObject>();
-
 
     private void Start()
     {
@@ -33,7 +33,10 @@ public class EnemyWaveSpawner : MonoBehaviour
     public void StartEnemyWave()
     {
         if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 0 && canSpawnEnemies)
+        {
             StartCoroutine(IEnemyWaveSpawner());
+            StartCoroutine(ShowWaveTxt.instance.OnStartWaveBtnPressed());
+        }
     }
 
 
@@ -56,7 +59,7 @@ public class EnemyWaveSpawner : MonoBehaviour
         if (round % 10 == 0)
         {
             Instantiate(bosses[Random.Range(0, bosses.Length)], spawner.position, Quaternion.identity, parent);
-
+            extraEnemies += 2;
             increaseAllEnemyHP();
         }
 
