@@ -154,7 +154,7 @@ public class CameraMovement : MonoBehaviour
             StopLooking();
         }
 
-        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, 2.5f, 200f), transform.position.z);
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, 3f, 200f), transform.position.z);
     }
 
     void OnDisable()
