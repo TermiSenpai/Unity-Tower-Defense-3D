@@ -20,4 +20,9 @@ public class SceneController : MonoBehaviour
 
     }
 
+    public void ToggleOptions(GameObject options)
+    {
+        options.SetActive(!options.activeInHierarchy);
+    }
+
 }

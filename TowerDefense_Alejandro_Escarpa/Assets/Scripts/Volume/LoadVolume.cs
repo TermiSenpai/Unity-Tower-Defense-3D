@@ -6,13 +6,12 @@ using UnityEngine.UI;
 public class LoadVolume : MonoBehaviour
 {
     [SerializeField] VolumeManager[] volumes;
-    [SerializeField] Slider[] sliders;
 
     private void Start()
     {
         for (int i = 0; i < volumes.Length; i++)
         {
-            sliders[i].value = PlayerPrefs.GetFloat(volumes[i].mixerName, 1);
+            volumes[i].slider.value = PlayerPrefs.GetFloat(volumes[i].mixerName, 1);
         }
     }
 }

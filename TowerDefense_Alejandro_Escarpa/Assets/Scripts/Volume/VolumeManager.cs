@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class VolumeManager : MonoBehaviour
 {
-    [SerializeField] private Slider slider;
+    public Slider slider;
     [SerializeField] private AudioMixer mixer;
     public string mixerName;
 
