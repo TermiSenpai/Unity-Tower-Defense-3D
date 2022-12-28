@@ -154,6 +154,7 @@ public class CameraMovement : MonoBehaviour
             StopLooking();
         }
 
+        // Limit the distance in Y axis
         transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, 3f, 200f), transform.position.z);
     }
 
