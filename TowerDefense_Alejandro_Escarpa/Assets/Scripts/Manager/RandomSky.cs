@@ -25,6 +25,6 @@ public class RandomSky : MonoBehaviour
         RenderSettings.sun.intensity = selectedSky.sunIntensity;
         RenderSettings.sun.shadowStrength = selectedSky.shadowStrenght;
 
-        Lightmapping.lightingSettings = selectedSky.lightingSettings;
+        //Lightmapping.lightingSettings = selectedSky.lightingSettings;
     }
 }
