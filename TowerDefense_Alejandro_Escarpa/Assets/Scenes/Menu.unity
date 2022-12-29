@@ -40554,7 +40554,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &430628238706148162
 GameObject:
   m_ObjectHideFlags: 0
@@ -52857,7 +52857,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3598595535475850514
 GameObject:
   m_ObjectHideFlags: 0
@@ -53355,7 +53355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3598595535475850584
 GameObject:
   m_ObjectHideFlags: 0
@@ -59761,7 +59761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &4729704011345124249
 GameObject:
   m_ObjectHideFlags: 0
@@ -71098,7 +71098,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6341451211265111616
 GameObject:
   m_ObjectHideFlags: 0
@@ -72379,7 +72379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6349294026641015184
 GameObject:
   m_ObjectHideFlags: 0
@@ -75897,7 +75897,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6492652519953982973
 GameObject:
   m_ObjectHideFlags: 0
@@ -76842,7 +76842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6589927847566108983
 GameObject:
   m_ObjectHideFlags: 0
@@ -84328,7 +84328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &7484728503037165753
 GameObject:
   m_ObjectHideFlags: 0
@@ -85723,7 +85723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7516997897902070911
 Transform:
   m_ObjectHideFlags: 0

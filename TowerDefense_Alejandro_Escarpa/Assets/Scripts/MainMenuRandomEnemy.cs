@@ -8,10 +8,6 @@ public class MainMenuRandomEnemy : MonoBehaviour
 
     private void Start()
     {
-        foreach(var enemy in enemies)
-            enemy.SetActive(false);
-
         enemies[Random.Range(0, enemies.Length)].SetActive(true);
-
     }
 }
