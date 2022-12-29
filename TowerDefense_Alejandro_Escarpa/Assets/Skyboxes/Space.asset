@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2953bba7105df4892a613ecf192e66, type: 3}
+  m_Name: Space
+  m_EditorClassIdentifier: 
+  skybox: {fileID: 2100000, guid: 13f6e5eed33d84c76979f1ec06b5e48c, type: 2}
+  intensity: 0.8
+  sunIntensity: 0.6
+  shadowStrenght: 0.2
+  lightColor: {r: 0.69803923, g: 0.11764707, b: 0.07058824, a: 1}
+  lightingSettings: {fileID: 4890085278179872738, guid: 2839bf651e60590498a4c63c9d7a234e, type: 2}
