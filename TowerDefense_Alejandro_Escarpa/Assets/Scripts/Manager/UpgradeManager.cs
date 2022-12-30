@@ -56,7 +56,7 @@ public class UpgradeManager : MonoBehaviour
         selectedGround.SetBuildedTurret(selectedTurret.nextLevel);
         buildManager.SetTurretToBuild(null);
         buildManager.CancelBuildUI();
-        buildManager.ShowInfo(selectedGround);
+        uiPanel.ClosePanel();
     }
 
     public void SellTurret()
