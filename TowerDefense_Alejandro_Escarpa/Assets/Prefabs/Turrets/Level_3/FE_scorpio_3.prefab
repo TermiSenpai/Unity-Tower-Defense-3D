@@ -31,67 +31,6 @@ Transform:
   m_Father: {fileID: 582776922323831203}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &584466125547656139
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 582688589489414333}
-  - component: {fileID: 719425490618583867}
-  - component: {fileID: 688607685500087105}
-  m_Layer: 0
-  m_Name: Zone 3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &582688589489414333
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584466125547656139}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.035000008}
-  m_LocalScale: {x: 1.0937409, y: 1.09373, z: 1.0937409}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 578715651533788337}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &719425490618583867
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584466125547656139}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 4
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &688607685500087105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584466125547656139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c40027982a518f4c877ed8b22c18b9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  twr: {fileID: 0}
-  lockE: 0
-  curTarget: {fileID: 0}
 --- !u!1 &584564508481865519
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +62,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 578715651533788337}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &607082612856607735
 MeshFilter:
@@ -207,7 +146,7 @@ Transform:
   m_Children:
   - {fileID: 583153985043834983}
   m_Father: {fileID: 578715651533788337}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &607825695274260477
 MeshFilter:
@@ -259,82 +198,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &584949619051509491
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 583097945981112563}
-  - component: {fileID: 718334291438623853}
-  - component: {fileID: 688798492287255203}
-  - component: {fileID: 637365440943702047}
-  m_Layer: 0
-  m_Name: Tower_Bug 2
-  m_TagString: Castle
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &583097945981112563
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584949619051509491}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 2.356, z: 0.373}
-  m_LocalScale: {x: 0.040000044, y: 0.04, z: 0.040000044}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 578715651533788337}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!135 &718334291438623853
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584949619051509491}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 4
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &688798492287255203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584949619051509491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c38968fa289f83c4bb374de48ee8ef8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CastleHp: 30
---- !u!54 &637365440943702047
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584949619051509491}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &585200905994930339
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,10 +230,8 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 582688589489414333}
   - {fileID: 583186659048602687}
   - {fileID: 582776922323831203}
-  - {fileID: 583097945981112563}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -386,8 +247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590138e85104721418af6d46ee7bd70d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partToRotate: {fileID: 0}
-  rotateTime: 0
+  partToRotate: {fileID: 582776922323831203}
+  rotateTime: 10
 --- !u!114 &4382190259942820882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6fd7870d62e7b4c80d40aec7c1c33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turret: {fileID: 0}
+  turret: {fileID: 11400000, guid: a91ef54c8f06eed4985fe4362ed4af3a, type: 2}
 --- !u!114 &7274422997880913560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,4 +286,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1deedaf91416dac4086406ff00b48457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 0}
+  firePoint: {fileID: 583153985043834983}

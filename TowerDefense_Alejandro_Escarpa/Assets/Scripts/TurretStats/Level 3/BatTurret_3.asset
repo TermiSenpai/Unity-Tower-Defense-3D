@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
+  m_Name: BatTurret_3
+  m_EditorClassIdentifier: 
+  turretName: Crossbow
+  turretImg: {fileID: 21300000, guid: b63bdd90e46e4174887ca37b398a4fd1, type: 3}
+  damage: 7
+  range: 8
+  fireRate: 1.25
+  attackDescription: Shooting enemy!
+  bullet: {fileID: 2094964774532070311, guid: 0bc617d65d6888349b70e78f760fef40, type: 3}
+  cost: 0
+  prefab: {fileID: 609853525173271751, guid: 36d211de64b916d4a9387fd101f8348a, type: 3}
+  upgradeCost: 0
+  sellValue: 500
+  nextLevel: {fileID: 0}

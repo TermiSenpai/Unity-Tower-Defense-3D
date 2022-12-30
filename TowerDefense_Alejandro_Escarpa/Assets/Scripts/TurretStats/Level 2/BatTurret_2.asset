@@ -23,4 +23,4 @@ MonoBehaviour:
   prefab: {fileID: 8128422380594348077, guid: 2623a0f3d7bfa0a4e83f32f3b0b457fa, type: 3}
   upgradeCost: 500
   sellValue: 150
-  nextLevel: {fileID: 0}
+  nextLevel: {fileID: 11400000, guid: 6ba61b9e19b484c4cb91e179fd68eca6, type: 2}

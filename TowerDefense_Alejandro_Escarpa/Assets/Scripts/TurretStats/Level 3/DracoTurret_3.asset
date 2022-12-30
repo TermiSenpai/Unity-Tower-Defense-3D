@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
+  m_Name: DracoTurret_3
+  m_EditorClassIdentifier: 
+  turretName: Draco
+  turretImg: {fileID: 21300000, guid: 4431669cd966fde458390ef8447255e9, type: 3}
+  damage: 10
+  range: 8
+  fireRate: 1
+  attackDescription: Fire attack!
+  bullet: {fileID: 1275120847650732, guid: b5960c5fe23ee0149bb44529a9a9fe31, type: 3}
+  cost: 0
+  prefab: {fileID: 2197327979794589946, guid: 7935e2e49cf139a4eb11b379811d4d9f, type: 3}
+  upgradeCost: 0
+  sellValue: 500
+  nextLevel: {fileID: 0}

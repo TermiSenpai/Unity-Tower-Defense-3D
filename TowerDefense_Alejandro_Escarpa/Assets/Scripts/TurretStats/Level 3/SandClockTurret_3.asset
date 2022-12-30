@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
-  m_Name: SandClockTurret_2
+  m_Name: SandClockTurret_3
   m_EditorClassIdentifier: 
-  turretName: 
-  turretImg: {fileID: 21300000, guid: 896323e07d2c33740b171b518a774e7b, type: 3}
+  turretName: SandClock
+  turretImg: {fileID: 21300000, guid: b0e487035ad3c4a45bc4bc2cb7d76d83, type: 3}
   damage: 0
-  range: 7
-  fireRate: 1
-  attackDescription: Slow enemies!
+  range: 8
+  fireRate: 0
+  attackDescription: Ralentice enemies
   bullet: {fileID: 0}
   cost: 0
-  prefab: {fileID: 4833676515973474496, guid: 0b3f433f9d627064a88ee26274ed7c88, type: 3}
-  upgradeCost: 1500
-  sellValue: 750
-  nextLevel: {fileID: 11400000, guid: 79e8f03b7ddb37a48a43bce5ffbfd3d0, type: 2}
+  prefab: {fileID: 4987799554876082089, guid: ebe97edd2544d6c4194ab8336fc68ffb, type: 3}
+  upgradeCost: 0
+  sellValue: 500
+  nextLevel: {fileID: 0}

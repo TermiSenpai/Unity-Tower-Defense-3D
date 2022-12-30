@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
-  m_Name: ScorpioTurret
+  m_Name: ScorpioTurret_3
   m_EditorClassIdentifier: 
   turretName: Scorpio
-  turretImg: {fileID: 21300000, guid: a87c418a15ae0d6478e3fe5a760f8c16, type: 3}
-  damage: 2
-  range: 6
-  fireRate: 1
+  turretImg: {fileID: 21300000, guid: dbc74f0416edea84bbbb0fa9fe439b48, type: 3}
+  damage: 6
+  range: 8
+  fireRate: 1.25
   attackDescription: Poison enemies for 5 seconds!
-  bullet: {fileID: 388264460338017488, guid: 03b286e9616beef4fb5d0bc4bdbedbf8, type: 3}
-  cost: 300
-  prefab: {fileID: 1757474844838269121, guid: 04b157db09730034697f366a1258bf54, type: 3}
-  upgradeCost: 500
-  sellValue: 150
-  nextLevel: {fileID: 11400000, guid: 16b5901377393fb4eaf78fb4761f4ad5, type: 2}
+  bullet: {fileID: 3092820647601453873, guid: 86da0acc1c5cbf640ad1125915b8f599, type: 3}
+  cost: 0
+  prefab: {fileID: 585200905994930339, guid: 8df4a437f0fea6446a48e9dd8cbfba90, type: 3}
+  upgradeCost: 0
+  sellValue: 500
+  nextLevel: {fileID: 11400000}
