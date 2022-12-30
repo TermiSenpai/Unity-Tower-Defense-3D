@@ -17,7 +17,7 @@ MonoBehaviour:
   damage: 0
   range: 8
   fireRate: 0
-  attackDescription: Ralentice enemies
+  attackDescription: Slow enemies
   bullet: {fileID: 0}
   cost: 0
   prefab: {fileID: 4987799554876082089, guid: ebe97edd2544d6c4194ab8336fc68ffb, type: 3}
