@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
+  m_Name: Fire_2
+  m_EditorClassIdentifier: 
+  turretName: Torch
+  turretImg: {fileID: 21300000, guid: 1045c3f642379564ca79bfb208130d06, type: 3}
+  damage: 7
+  range: 8
+  fireRate: 1.3
+  attackDescription: FIRE FIRE FIREEEEEE
+  bullet: {fileID: 8940813190143446904, guid: 1849e7540ed0d2148886fe7d04ecb1ca, type: 3}
+  cost: 0
+  prefab: {fileID: 5876425800668675762, guid: 71fbbae1abe4d7b4880e364a3f5d0594, type: 3}
+  upgradeCost: 1250
+  sellValue: 400
+  nextLevel: {fileID: 0}
