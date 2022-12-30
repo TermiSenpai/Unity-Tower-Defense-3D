@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
   m_Name: Fire_2
   m_EditorClassIdentifier: 
-  turretName: Torch
+  turretName: Torch lv 2
   turretImg: {fileID: 21300000, guid: 1045c3f642379564ca79bfb208130d06, type: 3}
   damage: 7
   range: 8

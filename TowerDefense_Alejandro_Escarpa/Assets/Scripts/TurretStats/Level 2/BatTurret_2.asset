@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
   m_Name: BatTurret_2
   m_EditorClassIdentifier: 
-  turretName: Crossbow
+  turretName: Crossbow lv 2
   turretImg: {fileID: 21300000, guid: 56f4b50e6686c98408b3fc3032581518, type: 3}
   damage: 5
   range: 7

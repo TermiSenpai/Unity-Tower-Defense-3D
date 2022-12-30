@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
   m_Name: Scorpio_2
   m_EditorClassIdentifier: 
-  turretName: Scorpio
+  turretName: Scorpio lv 2
   turretImg: {fileID: 21300000, guid: 651227038e1be7040885981b4e8d722e, type: 3}
   damage: 4
   range: 8

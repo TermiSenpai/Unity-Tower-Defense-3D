@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
   m_Name: DracoTurret_2
   m_EditorClassIdentifier: 
-  turretName: 
+  turretName: Draco lv 2
   turretImg: {fileID: 21300000, guid: 4bb84193da3e3f54c96a0823a8f1eeca, type: 3}
   damage: 8
   range: 7

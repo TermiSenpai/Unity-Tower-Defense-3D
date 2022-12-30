@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22cad33e88fff348897cc54346cc4cd, type: 3}
   m_Name: CrystalTurret_2
   m_EditorClassIdentifier: 
-  turretName: Crystal
+  turretName: Crystal lv 2
   turretImg: {fileID: 21300000, guid: 882f692a0293b6d47a5e8afed9eaae2b, type: 3}
   damage: 7
   range: 7
