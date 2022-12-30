@@ -16,8 +16,8 @@ MonoBehaviour:
   turretImg: {fileID: 21300000, guid: 651227038e1be7040885981b4e8d722e, type: 3}
   damage: 4
   range: 8
-  fireRate: 1.1
-  attackDescription: Poison enemies for 7 seconds!
+  fireRate: 0.8
+  attackDescription: Poison enemies for 5 seconds!
   bullet: {fileID: 5863232306372115508, guid: 7a0a5f8da57a641448ffcf99d170278e, type: 3}
   cost: 0
   prefab: {fileID: 7134813064854035161, guid: 20ca2ecf70397a24ebb5f71b188edbb4, type: 3}
