@@ -11,6 +11,7 @@ public class EnemyHp : MonoBehaviour
     public float startHealth = 5;
     private float health;
     bool isDead = false;
+    public bool isPoisoned = false;
 
     private void Start()
     {
@@ -36,6 +37,15 @@ public class EnemyHp : MonoBehaviour
             enemyDead.EnemyKilled();
         }
 
+    }
+
+    public IEnumerator PoisonEnemy(int damage)
+    {
+        for(int i = 0; i < 5; i++)
+        {
+            Dmg(damage);
+            yield return new WaitForSeconds(1f);
+        }
     }
 
 }

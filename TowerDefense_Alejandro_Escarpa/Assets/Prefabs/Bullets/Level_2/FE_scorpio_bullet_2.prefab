@@ -9713,6 +9713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   hitParticle: {fileID: 4271093393614929224, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
+  effect: 1
 --- !u!1 &5863675142321102542
 GameObject:
   m_ObjectHideFlags: 0

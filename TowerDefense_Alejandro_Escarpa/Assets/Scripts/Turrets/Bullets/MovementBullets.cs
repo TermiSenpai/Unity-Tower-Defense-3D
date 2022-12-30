@@ -4,6 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+public enum bulletEffect
+{
+    damage,
+    poison
+}
+
+
 public class MovementBullets : MonoBehaviour
 {
     [SerializeField] private float speed;
@@ -12,6 +19,7 @@ public class MovementBullets : MonoBehaviour
     private Transform target;
     Vector3 lastBulletPosition;
     FBxPlayerManager fbxPlayer;
+    [SerializeField] private bulletEffect effect;
 
 
     private void Start()
@@ -48,7 +56,17 @@ public class MovementBullets : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent<EnemyHp>(out EnemyHp enemyHP))
         {
-            enemyHP.Dmg(damage);
+            switch (effect)
+            {
+                case bulletEffect.damage:
+                    enemyHP.Dmg(damage);
+                    break;
+
+                case bulletEffect.poison:
+                    if (enemyHP.isPoisoned) break;
+                    enemyHP.StartCoroutine(enemyHP.PoisonEnemy(damage));
+                    break;
+            }
         }
         fbxPlayer.ImpactFbxPlay(hitParticle, other.transform);
         Destroy(gameObject);
